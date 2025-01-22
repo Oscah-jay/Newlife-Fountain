@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Sermon</title>
+    <div id="navbar"></div>
+            <script>
+                fetch('navbar.html')
+                  .then(response => response.text())
+                  .then(data => {
+                    document.getElementById('navbar').innerHTML = data;
+                  });
+              </script> 
+    <style>
+        .daily-sermon {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .daily-sermon h3 {
+            margin: 0 0 10px;
+        }
+        .daily-sermon p {
+            margin: 0 0 5px;
+        }
+        h1{
+            font-size: 50px;
+            font-weight: bold;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Today's Sermon</h1>
+    <h2>
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DUWeOtQf_AQ?si=dHyVwCg_3uPGqoL6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GMOzppiMWdw?si=BS1OPrU02AuW5aJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_cxYbLx9u3c?si=oU719FvG-lc1Y59X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/e8_yqyQPW3o?si=2nnCfP-IYAud2_BE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </p>
+    </h2>
+    <section id="sermon"></section>
+    
+    <script src="js/sermon.js"></script>
+
+    <div id="footer"></div>
+
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    });
+</script>
+
+    
+</body>
+</html>

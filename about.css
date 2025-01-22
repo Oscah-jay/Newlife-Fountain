@@ -1,0 +1,56 @@
+body {
+    font-family: Saol Display, Georgia, Cambria, Times New Roman, Times, serif;;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(23, 0, 19);
+    color: #fff;
+}
+
+
+.cards-container {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    height: 200px;
+    position: relative;
+    background-image: url('');
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .container div {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 0;
+}
+footer h4 {
+    border-bottom: 2px solid #77aaff;
+    padding-bottom: 10px;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer ul li {
+    margin: 10px 0;
+}
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+footer ul li a:hover {
+    text-decoration: underline;
+}
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newlife Fountain Ministries</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome for icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  
+    <header>
+        
+        <div class="name">
+            <p>
+                HAPPY YOU ARE HERE
+                <span>
+                    WELCOME
+                </span>
+                &mdash; To Newlife Fountain Ministries
+            </p>   
+        </div>
+        <div id="navbar"></div>
+            <script>
+                fetch('navbar.html')
+                  .then(response => response.text())
+                  .then(data => {
+                    document.getElementById('navbar').innerHTML = data;
+                  });
+              </script> 
+    </header>
+
+    <div class="hero">
+      <video src="./Assets/videos/hero.mp4" autoplay muted loop></video>
+    </div>
+
+
+    <div class="text">
+        <p>
+           <u>FIND YOUR PLACE AT NEWLIFE FOUNTAIN MINISTRIES</u>  <br><br>
+            Newlife Fountain Ministries is all about serving God and our community
+            in all aspects and reaching out to everyone through our deeds and through
+            the spreading of the good news of our Lord and Savior Jesus Christ. <br>
+            Through our ministry different groups have benefited through our outreach 
+            programs.
+        </p>
+    </div>
+    
+
+
+    <div class="box1">
+        <span style="--i:1"><img src="Assets\images\sub1.png" alt=""></span>
+        <span style="--i:2"><img src="Assets\images\sub2.png" alt=""></span>
+        <span style="--i:3"><img src="Assets\images\sub3.png" alt=""></span>
+        <span style="--i:4"><img src="Assets\images\sub4.png" alt=""></span>
+    </div>
+        <button class="button" onclick="goToLeadersPage()">Meet Our Leaders</button>
+
+    </div>
+
+    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGB_VdvRU&#x2F;iBax-toIpYaNK0jPF94ESg&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGB_VdvRU&#x2F;iBax-toIpYaNK0jPF94ESg&#x2F;view?utm_content=DAGGB_VdvRU&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a> 
+        
+
+    <h6>Announcements and Events</h6>
+    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGCc4TaY0&#x2F;Svt5oGJBEaGk6DPeIaMpWg&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGGCc4TaY0&#x2F;Svt5oGJBEaGk6DPeIaMpWg&#x2F;view?utm_content=DAGGCc4TaY0&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>
+    
+
+
+
+
+
+<div id="footer"></div>
+
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    });
+</script>
+
+    <script src="js/home.js"></script>
+</body>
+</html>

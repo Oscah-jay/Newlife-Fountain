@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="projects.css">
+</head>
+<div id="navbar"></div>
+            <script>
+                fetch('navbar.html')
+                  .then(response => response.text())
+                  .then(data => {
+                    document.getElementById('navbar').innerHTML = data;
+                  });
+              </script> 
+    <header>
+        <div class="container">
+            <h1>Projects</h1>
+        </div>
+    </header>
+
+    <div style="position: relative; width: 100%; height: 0; padding-top: 56.3415%;
+    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+    border-radius: 8px; will-change: transform;">
+     <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+       src="https://www.canva.com/design/DAGGUTAF8BA/H7BMc5zODQSAhp0ykIVqZQ/watch?embed&autoplay=1" allowfullscreen="allowfullscreen" allow="fullscreen">
+     </iframe>
+   </div>
+   <a href="https://www.canva.com/design/DAGGUTAF8BA/H7BMc5zODQSAhp0ykIVqZQ/watch?utm_content=DAGGUTAF8BA&utm_campaign=designshare&utm_medium=embeds&utm_source=link" target="_blank" rel="noopener"></a>
+   <h2>Get Involved</h2>   
+        <p>We believe that everyone has something valuable to contribute.
+             If you feel called to participate in any of these projects or have
+            ideas for new initiatives, please reach out to us. Your involvement
+            can make a significant difference in the lives of others and in our community.</p>
+
+        <p><strong>Contact Us:</strong></p>
+        <p>Email: <a href="newlifefountainmin@gmail.com">newlifefountainmin</a><br>
+        Phone: +254 724656638</p>
+        <p>Thank you for your support and commitment to our mission. 
+            Together, we can accomplish great things for the glory of God.</p>
+    </div>
+
+
+    <div id="footer"></div>
+
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    });
+</script>
+    
+     <script src="js/projects.js"></script>    
+</body>
+</html>
