@@ -672,6 +672,11 @@ icon, .text{
     .button{
         margin-left: 100px;
     }
+
+    .box1 span picture img {
+        max-width: 100%; 
+        margin: 0 auto;
+    }
     
     
 
