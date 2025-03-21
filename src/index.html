@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newlife Fountain Ministries</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome for icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -28,7 +28,7 @@
         </div>
         <div id="navbar"></div>
             <script>
-                fetch('navbar.html')
+                fetch('./components/navbar.html')
                   .then(response => response.text())
                   .then(data => {
                     document.getElementById('navbar').innerHTML = data;
@@ -37,7 +37,7 @@
     </header>
 
     <div class="hero">
-      <video src="./Assets/videos/hero.mp4" autoplay muted loop></video>
+      <video src="../public/videos/hero.mp4" autoplay muted loop></video>
     </div>
 
 
@@ -57,26 +57,26 @@
     <div class="box1">
       <span style="--i:1">
           <picture>
-              <source srcset="Assets/images/subphone/1.png" media="(max-width: 500px)">
-              <img src="Assets/images/sub1.png" alt="">
+              <source srcset="../public/images/subphone/1.png" media="(max-width: 500px)">
+              <img src="../public/images/sub1.png" alt="">
           </picture>
       </span>
       <span style="--i:2">
           <picture>
-              <source srcset="Assets/images/subphone/2.png" media="(max-width: 500px)">
-              <img src="Assets/images/sub2.png" alt="">
+              <source srcset="../public/images/subphone/2.png" media="(max-width: 500px)">
+              <img src="../public/images/sub2.png" alt="">
           </picture>
       </span>
       <span style="--i:3">
           <picture>
-              <source srcset="Assets/images/subphone/3.png" media="(max-width: 500px)">
-              <img src="Assets/images/sub3.png" alt="">
+              <source srcset="../public/images/subphone/3.png" media="(max-width: 500px)">
+              <img src="../public/images/sub3.png" alt="">
           </picture>
       </span>
       <span style="--i:4">
           <picture>
-              <source srcset="Assets/images/subphone/4.png" media="(max-width: 500px)">
-              <img src="Assets/images/sub4.png" alt="">
+              <source srcset="../public/images/subphone/4.png" media="(max-width: 500px)">
+              <img src="../public/images/sub4.png" alt="">
           </picture>
       </span>
   </div>
@@ -117,7 +117,7 @@
                 </div>
                 <div class="timeline-image-container">
                     <div class="timeline-image">
-                        <img src="./Assets/images/onset.jpg" alt="">
+                        <img src="../public/images/onset.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -131,7 +131,7 @@
                 </div>
                 <div class="timeline-image-container">
                     <div class="timeline-image">
-                        <img src="./Assets/images/24.jpeg" alt="one">
+                        <img src="../public/images/24.jpeg" alt="one">
                     </div>
                 </div>
             </div>
@@ -146,7 +146,7 @@
                 </div>
                 <div class="timeline-image-container">
                     <div class="timeline-image">
-                        <img src="./Assets/images/bishop.jpeg" alt="bishop">
+                        <img src="../public/images/bishop.jpeg" alt="bishop">
                     </div>
                 </div>
             </div>
@@ -161,7 +161,7 @@
                 </div>
                 <div class="timeline-image-container">
                     <div class="timeline-image logo-container">
-                        <img src="./Assets/images/kids.jpeg" alt="kids">
+                        <img src="../public/images/kids.jpeg" alt="kids">
                     </div>
                 </div>
             </div>
@@ -176,7 +176,7 @@
                 </div>
                 <div class="timeline-image-container">
                     <div class="timeline-image">
-                        <img src="./Assets/images/6.jpeg" alt="worshippers">
+                        <img src="../public/images/6.jpeg" alt="worshippers">
                     </div>
                 </div>
             </div>
@@ -191,7 +191,7 @@
                 </div>
                 <div class="timeline-image-container">
                     <div class="timeline-image logo-container">
-                        <img src="./Assets/images/21.jpeg" alt="preacher">
+                        <img src="../public/images/21.jpeg" alt="preacher">
                     </div>
                 </div>
             </div>
@@ -203,7 +203,7 @@
                 </div>
                 <div class="timeline-image-container">
                     <div class="timeline-image logo-container">
-                        <img src="./Assets/images/16.jpeg" alt="church">
+                        <img src="../public/images/16.jpeg" alt="church">
                     </div>
                 </div>
             </div>
@@ -230,13 +230,13 @@
 <div id="footer"></div>
 
 <script>
-  fetch('footer.html')
+  fetch('./components/footer.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('footer').innerHTML = data;
     });
 </script>
 
-    <script src="js/home.js"></script>
+    <script src="./js/home.js"></script>
 </body>
 </html>
