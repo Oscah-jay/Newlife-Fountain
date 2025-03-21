@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newlife Fountain Ministries</title>
     <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome for icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -17,23 +18,33 @@
   
     <header>
         
-        <div class="name">
-            <p>
-                HAPPY YOU ARE HERE
-                <span>
-                    WELCOME
-                </span>
-                &mdash; To Newlife Fountain Ministries
-            </p>   
-        </div>
-        <div id="navbar"></div>
-            <script>
-                fetch('./components/navbar.html')
-                  .then(response => response.text())
-                  .then(data => {
-                    document.getElementById('navbar').innerHTML = data;
-                  });
-              </script> 
+        
+        <div id="navbar-container"></div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const navbarContainer = document.getElementById('navbar-container');
+                
+                fetch('components/navbar.html')
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok: ' + response.statusText);
+                        }
+                        return response.text();
+                    })
+                    .then(html => {
+                        navbarContainer.innerHTML = html;
+                        
+                        const script = document.createElement('script');
+                        script.src = 'js/navbar.js';
+                        document.body.appendChild(script);
+                    })
+                    .catch(error => {
+                        console.error('Error loading navbar:', error);
+                        navbarContainer.innerHTML = '<p>Error loading navigation bar. Please check your connection.</p>';
+                    });
+            });
+        </script>
+
     </header>
 
     <div class="hero">
