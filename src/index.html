@@ -47,19 +47,48 @@
 
     </header>
 
-    <div class="hero">
-      <video src="../public/videos/hero.mp4" autoplay muted loop></video>
-    </div>
+    <section class="hero-section">
+        <div class="hero-background">
+            <video id="background-video" autoplay loop muted playsinline>
+                <source src="../public/videos/hero.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>YOUR PLACE</h1>
+            <h1>YOUR PURPOSE</h1>
+            <h1>YOUR COMMUNITY</h1>
+        </div>
+    </section>
 
-
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <img src="../public/images/logos/3.png" alt="logo bg">
+                <h1>ABOUT US</h1>
+                <div class="divider"></div>
+                <p>
+                    <u>FIND YOUR PLACE AT NEWLIFE FOUNTAIN MINISTRIES</u>  <br><br>
+                    Newlife Fountain Ministries is all about serving God and our community
+                    in all aspects and reaching out to everyone through our deeds and through
+                    the spreading of the good news of our Lord and Savior Jesus Christ. <br>
+                    Through our ministry different groups have benefited through our outreach 
+                    programs.
+                    <span class="highlight">one relationship at a time</span>. You're wanted and you're needed... <span class="highlight">THIS is 
+                    what we are made for!</span>
+                </p>
+                <a href="../src/pages/About/aboutus.html" class="read-more-btn">READ MORE</a>
+            </div>
+            <div class="about-image">
+                <img src="../public/images/14 new.jpg" alt="Church worship service with raised hands">
+            </div>
+        </div>
+    </section>
+    
     <div class="text">
         <p>
-           <u>FIND YOUR PLACE AT NEWLIFE FOUNTAIN MINISTRIES</u>  <br><br>
-            Newlife Fountain Ministries is all about serving God and our community
-            in all aspects and reaching out to everyone through our deeds and through
-            the spreading of the good news of our Lord and Savior Jesus Christ. <br>
-            Through our ministry different groups have benefited through our outreach 
-            programs.
+           
         </p>
     </div>
     
@@ -91,9 +120,34 @@
           </picture>
       </span>
   </div>
-  
 
-        <button class="button" onclick="goToLeadersPage()">Meet Our Leaders</button>
+  <section class="leadership-section">
+    <div class="container1">
+        <div class="leadership-content">
+            <h1>Our Leadership</h1>
+            <div class="leader-info">
+                <span class="leader-title">Bishop</span>
+                <h2>Moses Wamalwa</h2>
+                <p>
+                    Moses is the Visionary Architect and leader of the Newlife Fountain Ministries,
+                     and the founder of Passion Institute. Shelley is the 
+                    Chief Strategist, Director of Label Operations and Artist 
+                    Management for sixstepsrecords, co-founder of the Passion 
+                    Movement, and leads The GROVE, a gathering for the girls of 
+                    Atlanta.
+                </p>
+                <a href="../src/pages/leaders/leaders.html" class="leadership-btn" onclick="goToLeadersPage">SEE OUR LEADERSHIP</a>
+            </div>
+        </div>
+        <div class="leadership-image">
+            <img src="../public/images/bishop.jpeg" alt="bishop">
+        </div>
+    </div>
+    <div class="navigation">
+        <button class="nav-arrow prev">←</button>
+        <button class="nav-arrow next">→</button>
+    </div>
+</section>   
 
     </div>
 

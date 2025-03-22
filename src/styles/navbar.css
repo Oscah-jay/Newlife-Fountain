@@ -8,6 +8,8 @@
     --nav-hover: #6366f1;
     --divider-color: rgba(255, 255, 255, 0.5);
     --shadow-color: rgba(0, 0, 0, 0.1);
+    --bg-color: #f9fafb;
+    --nav-bg: white;
 }
 
 .dark-mode {
@@ -31,6 +33,7 @@
     box-shadow: 0 2px 10px var(--shadow-color);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    margin-bottom: 100px;
 }
 
 .navbar {
@@ -54,7 +57,7 @@
 .navbar-logo a img{
     border-radius: 50%;
     color: white;
-    margin-left: -560px;
+    margin-left: -700px;
 }
 
 .logo-dev {
