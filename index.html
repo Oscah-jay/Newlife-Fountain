@@ -24,7 +24,7 @@
             document.addEventListener('DOMContentLoaded', function() {
                 const navbarContainer = document.getElementById('navbar-container');
                 
-                fetch('components/navbar.html')
+                fetch('navbar.html')
                     .then(response => {
                         if (!response.ok) {
                             throw new Error('Network response was not ok: ' + response.statusText);
@@ -50,7 +50,7 @@
     <section class="hero-section">
         <div class="hero-background">
             <video id="background-video" autoplay loop muted playsinline>
-                <source src="../public/videos/hero.mp4" type="video/mp4">
+                <source src="./public/videos/hero.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -65,7 +65,7 @@
     <section class="about-section">
         <div class="container">
             <div class="about-content">
-                <img src="../public/images/logos/3.png" alt="logo bg">
+                <img src="./public/images/logos/3.png" alt="logo bg">
                 <h1>ABOUT US</h1>
                 <div class="divider"></div>
                 <p>
@@ -78,10 +78,10 @@
                     <span class="highlight">one relationship at a time</span>. You're wanted and you're needed... <span class="highlight">THIS is 
                     what we are made for!</span>
                 </p>
-                <a href="../src/pages/About/aboutus.html" class="read-more-btn">READ MORE</a>
+                <a href="./aboutus.html" class="read-more-btn">READ MORE</a>
             </div>
             <div class="about-image">
-                <img src="../public/images/14 new.jpg" alt="Church worship service with raised hands">
+                <img src="./public/images/14 new.jpg" alt="Church worship service with raised hands">
             </div>
         </div>
     </section>
@@ -97,26 +97,26 @@
     <div class="box1">
       <span style="--i:1">
           <picture>
-              <source srcset="../public/images/subphone/1.png" media="(max-width: 500px)">
-              <img src="../public/images/sub1.png" alt="">
+              <source srcset="./public/images/subphone/1.png" media="(max-width: 500px)">
+              <img src="./public/images/sub1.png" alt="">
           </picture>
       </span>
       <span style="--i:2">
           <picture>
-              <source srcset="../public/images/subphone/2.png" media="(max-width: 500px)">
-              <img src="../public/images/sub2.png" alt="">
+              <source srcset="./public/images/subphone/2.png" media="(max-width: 500px)">
+              <img src="./public/images/sub2.png" alt="">
           </picture>
       </span>
       <span style="--i:3">
           <picture>
-              <source srcset="../public/images/subphone/3.png" media="(max-width: 500px)">
-              <img src="../public/images/sub3.png" alt="">
+              <source srcset="./public/images/subphone/3.png" media="(max-width: 500px)">
+              <img src="./public/images/sub3.png" alt="">
           </picture>
       </span>
       <span style="--i:4">
           <picture>
-              <source srcset="../public/images/subphone/4.png" media="(max-width: 500px)">
-              <img src="../public/images/sub4.png" alt="">
+              <source srcset="./public/images/subphone/4.png" media="(max-width: 500px)">
+              <img src="./public/images/sub4.png" alt="">
           </picture>
       </span>
   </div>
@@ -136,11 +136,11 @@
                      family to walk boldly in faith and purpose. Under his direction, our ministry continues to 
                      flourish as a beacon of hope, healing, and divine breakthrough.
                 </p>
-                <a href="../src/pages/leaders/leaders.html" class="leadership-btn" onclick="goToLeadersPage">SEE OUR LEADERSHIP</a>
+                <a href="./leaders.html" class="leadership-btn" onclick="goToLeadersPage">SEE OUR LEADERSHIP</a>
             </div>
         </div>
         <div class="leadership-image">
-            <img src="../public/images/bishop.jpeg" alt="bishop">
+            <img src="./public/images/bishop.jpeg" alt="bishop">
         </div>
     </div>
     <div class="navigation">
@@ -182,7 +182,7 @@
                 </div>
                 <div class="timeline-image-container">
                     <div class="timeline-image">
-                        <img src="../public/images/onset.jpg" alt="">
+                        <img src="./public/images/onset.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -196,7 +196,7 @@
                 </div>
                 <div class="timeline-image-container">
                     <div class="timeline-image">
-                        <img src="../public/images/24.jpeg" alt="one">
+                        <img src="./public/images/24.jpeg" alt="one">
                     </div>
                 </div>
             </div>
@@ -211,7 +211,7 @@
                 </div>
                 <div class="timeline-image-container">
                     <div class="timeline-image">
-                        <img src="../public/images/bishop.jpeg" alt="bishop">
+                        <img src="./public/images/bishop.jpeg" alt="bishop">
                     </div>
                 </div>
             </div>
@@ -226,7 +226,7 @@
                 </div>
                 <div class="timeline-image-container">
                     <div class="timeline-image logo-container">
-                        <img src="../public/images/kids.jpeg" alt="kids">
+                        <img src="./public/images/kids.jpeg" alt="kids">
                     </div>
                 </div>
             </div>
@@ -241,7 +241,7 @@
                 </div>
                 <div class="timeline-image-container">
                     <div class="timeline-image">
-                        <img src="../public/images/6.jpeg" alt="worshippers">
+                        <img src="./public/images/6.jpeg" alt="worshippers">
                     </div>
                 </div>
             </div>
@@ -256,7 +256,7 @@
                 </div>
                 <div class="timeline-image-container">
                     <div class="timeline-image logo-container">
-                        <img src="../public/images/21.jpeg" alt="preacher">
+                        <img src="./public/images/21.jpeg" alt="preacher">
                     </div>
                 </div>
             </div>
@@ -268,7 +268,7 @@
                 </div>
                 <div class="timeline-image-container">
                     <div class="timeline-image logo-container">
-                        <img src="../public/images/16.jpeg" alt="church">
+                        <img src="./public/images/16.jpeg" alt="church">
                     </div>
                 </div>
             </div>
@@ -293,7 +293,7 @@
     <div class="footer-content">
         <div class="footer-logo-section">
             <div class="logo">
-                <img src="../public/images/logos/3.png" alt="Logo" class="logo-img" width="600" height="600">
+                <img src="./public/images/logos/3.png" alt="Logo" class="logo-img" width="600" height="600">
             </div>
             <div class="social-icons">
                 <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
@@ -309,7 +309,7 @@
                 <ul>
                     <li><a href="#">Our Values</a></li>
                     <li><a href="#">What We Do</a></li>
-                    <li><a href="../src/pages/leaders/leaders.html">Church Leadership</a></li>
+                    <li><a href="./leaders.html">Church Leadership</a></li>
                     <li><a href="#">What We Believe</a></li>
                     <li><a href="#">Ministry Expansion</a></li>
                     <li><a href="#">Help for Churches</a></li>
@@ -353,7 +353,7 @@
                     <p>Trans-Nzoia</p>
                     
                     <div class="cta-buttons">
-                        <a href="../src/pages/contacts/contacts.html" class="cta-button">CONTACT US <i class="fas fa-arrow-right"></i></a>
+                        <a href="./contacts.html" class="cta-button">CONTACT US <i class="fas fa-arrow-right"></i></a>
                         <a href="#" class="cta-button">OUR LOCATIONS <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
