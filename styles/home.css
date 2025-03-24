@@ -555,6 +555,8 @@ icon, .text{
     color: #222327;
 }
 
+/*hero section*/
+
 .hero-section {
     position: relative;
     width: 100%;
@@ -612,7 +614,7 @@ icon, .text{
     margin-bottom: 20px;
     color: #0a2e36;
     text-transform: uppercase;
-    margin-right: -350px;
+    margin-right: -280px;
 }
 
 .history-section {
