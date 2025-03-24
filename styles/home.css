@@ -60,7 +60,7 @@ body {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    margin-right: -180px;
+    margin-right: -150px;
 }
 
 .leadership-content h1 {
@@ -68,7 +68,7 @@ body {
     font-weight: 800;
     margin-bottom: 30px;
     color: #111;
-    margin-left: -90px;
+    margin-left: -50px;
 }
 
 .leader-info {
