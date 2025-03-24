@@ -996,13 +996,13 @@ icon, .text{
 }
 
 .hero-content h1 {
-    font-size: 7rem;
+    font-size: 6.5rem;
     font-weight: 1000;
     line-height: 1.2;
     margin-bottom: 20px;
     color: #0a2e36;
     text-transform: uppercase;
-    margin-right: -600px;
+    margin-right: -400px;
 }
 
 .history-section {
