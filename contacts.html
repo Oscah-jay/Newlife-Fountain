@@ -110,7 +110,7 @@
                 <div class="modal-content">
                     <span class="close-modal">&times;</span>
                     <h2 class="modal-title">Contact Us</h2>
-                    <form class="contact-form">
+                    <form class="contact-form" id="contactForm">
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
@@ -127,6 +127,8 @@
                             <label for="message">Message</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
+                        <!-- Hidden field to capture which department was selected -->
+                        <input type="hidden" name="department" id="department-field">
                         <button type="submit" class="submit-button">Send Message</button>
                     </form>
                 </div>
