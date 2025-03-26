@@ -15,37 +15,32 @@
 </head>
 
 <body>
-  
-    <header>
-        
-        
-        <div id="navbar-container"></div>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const navbarContainer = document.getElementById('navbar-container');
+        <header class="navbar-container">
+            <nav class="navbar">
+                <div class="navbar-logo">
+                    <a href="#"> <img src="./Assets/images/logos/3.png" alt="logo" width="400px" height="400px"></a>
+                </div>
                 
-                fetch('navbar.html')
-                    .then(response => {
-                        if (!response.ok) {
-                            throw new Error('Network response was not ok: ' + response.statusText);
-                        }
-                        return response.text();
-                    })
-                    .then(html => {
-                        navbarContainer.innerHTML = html;
-                        
-                        const script = document.createElement('script');
-                        script.src = 'js/navbar.js';
-                        document.body.appendChild(script);
-                    })
-                    .catch(error => {
-                        console.error('Error loading navbar:', error);
-                        navbarContainer.innerHTML = '<p>Error loading navigation bar. Please check your connection.</p>';
-                    });
-            });
-        </script>
+                <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
+                    <span class="toggle-icon"></span>
+                </button>
+                
+                <ul class="navbar-menu" id="navbarMenu">
+                    <li class="navbar-item"><a href="#" class="navbar-link active">Home</a></li>
+                    <li class="navbar-item"><a href="./aboutus.html" class="navbar-link">About Us</a></li>
+                    <li class="navbar-item"><a href="./projects.html" class="navbar-link">Projects</a></li>
+                    <li class="navbar-item"><a href="./sermons.html" class="navbar-link">Sermons</a></li>
+                    <li class="navbar-item"><a href="./support.html" class="navbar-link">Support</a></li>
+                    <li class="navbar-item"><a href="./contacts.html" class="navbar-link">Contact Us</a></li>
+                    <li class="navbar-item">
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-    </header>
 
     <section class="hero-section">
         <div class="hero-background">
