@@ -207,7 +207,6 @@
 @media (max-width: 768px) {
     .navbar-toggle {
         display: block;
-        margin-right: -190px;
     }
     .navbar-container {
         position: absolute;
@@ -224,7 +223,7 @@
     }
 
     .navbar-logo a img{
-        margin-left: -150px;
+        margin-left: 5px;
         margin-top: 30px;
         max-width: 250px;
         max-height: 250px;
