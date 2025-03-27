@@ -721,7 +721,6 @@ body {
         display: block;
         position: fixed;
         top: 1rem;
-        right: 1rem;
         z-index: 101;
         background-color: #fff;
         border: none;
