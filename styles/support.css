@@ -592,6 +592,16 @@ body {
     .text-giving-preview {
         order: -1;
     }
+
+    .resource-card img{
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        object-fit: cover;
+
+    }
+
+
 }
 
 @media (min-width: 993px) {
