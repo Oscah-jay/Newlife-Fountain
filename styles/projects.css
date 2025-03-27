@@ -706,6 +706,7 @@ body {
         transform: translateX(100%);
         width: 100%;
         max-width: 300px;
+
     }
     
     .sidebar.active {
@@ -720,7 +721,6 @@ body {
         display: block;
         position: fixed;
         top: 1rem;
-        right: 1rem;
         z-index: 101;
         background-color: #fff;
         border: none;
