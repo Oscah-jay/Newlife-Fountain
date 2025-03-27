@@ -712,7 +712,7 @@ body {
     .hero-bg {
         background-image: url('../Assets/images/onset.jpg');
         opacity: 0.2;
-        max-width: 95%;
+        max-width: 85%;
     }
     
     .sidebar.active {
