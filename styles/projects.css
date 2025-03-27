@@ -752,9 +752,9 @@ body {
         height: 300px;
     }
 
-    .content-wrapper1{
+    .project-categories{
         width: 100%;
-        max-width: 300px;
+        max-width: 90%;
     }
     
     .media-overlay-title {
