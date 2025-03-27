@@ -149,3 +149,62 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Add this to your existing script.js file, inside the DOMContentLoaded event listener
+
+// Enhanced parallax effect for impact images
+const impactContainers = document.querySelectorAll('.impact-image-container');
+
+function handleImpactParallax() {
+    impactContainers.forEach(container => {
+        const image = container.querySelector('.impact-image');
+        const containerRect = container.getBoundingClientRect();
+        const containerCenter = containerRect.top + containerRect.height / 2;
+        const windowCenter = window.innerHeight / 2;
+        const distanceFromCenter = containerCenter - windowCenter;
+        
+        // Calculate parallax amount based on distance from center of viewport
+        const parallaxAmount = distanceFromCenter * 0.1;
+        
+        // Apply parallax effect if container is in viewport
+        if (containerRect.top < window.innerHeight && containerRect.bottom > 0) {
+            image.style.transform = `translateY(${parallaxAmount}px)`;
+        }
+    });
+}
+
+// Call on scroll and on initial load
+window.addEventListener('scroll', handleImpactParallax);
+handleImpactParallax();
+
+// Add smooth reveal animation for impact stories
+const impactStories = document.querySelectorAll('.impact-story');
+
+const impactObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            // Add a slight rotation effect when coming into view
+            entry.target.style.transform = 'translateY(0) rotate(0deg)';
+            entry.target.style.opacity = '1';
+        } else {
+            entry.target.classList.remove('visible');
+            // Reset the transform when out of view
+            entry.target.style.transform = 'translateY(50px) rotate(1deg)';
+            entry.target.style.opacity = '0';
+        }
+    });
+}, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+});
+
+impactStories.forEach(story => {
+    // Set initial state
+    story.style.transform = 'translateY(50px) rotate(1deg)';
+    story.style.opacity = '0';
+    story.style.transition = 'transform 0.8s ease-out, opacity 0.8s ease-out';
+    
+    // Observe the story
+    impactObserver.observe(story);
+});
