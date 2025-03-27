@@ -105,7 +105,7 @@ body {
 }
 
 .hero-bg {
-    background-image: url('https://source.unsplash.com/random/1920x1080/?mission');
+    background-image: url('../Assets/images/onset.jpg');
     opacity: 0.2;
 }
 
@@ -755,6 +755,15 @@ body {
     .project-categories{
         width: 100%;
         max-width: 90%;
+    }
+
+    .featured-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+        max-width: 90%;
+
     }
     
     .media-overlay-title {
