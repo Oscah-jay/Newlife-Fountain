@@ -756,6 +756,11 @@ body {
         max-width: 90%;
     }
 
+    .section{
+        justify-content: center;
+        align-items: center;
+    }
+
     .featured-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
