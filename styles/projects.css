@@ -708,6 +708,12 @@ body {
         max-width: 300px;
 
     }
+
+    .hero-bg {
+        background-image: url('../Assets/images/onset.jpg');
+        opacity: 0.2;
+        max-width: 95%;
+    }
     
     .sidebar.active {
         transform: translateX(0);
