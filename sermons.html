@@ -3,16 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sermons | Elevation Church</title>
-    <link rel="stylesheet" href="sermons.css">
+    <title>Sermons | Newlife Fountain Ministries</title>
+    <link rel="stylesheet" href="./styles/sermons.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
 </head>
 <body>
+
+    <header class="navbar-container">
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="#"> <img src="./Assets/images/logos/3.png" alt="logo" width="400px" height="400px"></a>
+            </div>
+            
+            <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
+                <span class="toggle-icon"></span>
+            </button>
+            
+            <ul class="navbar-menu" id="navbarMenu">
+                <li class="navbar-item"><a href="./index.html" class="navbar-link active">Home</a></li>
+                <li class="navbar-item"><a href="./aboutus.html" class="navbar-link">About Us</a></li>
+                <li class="navbar-item"><a href="./projects.html" class="navbar-link">Projects</a></li>
+                <li class="navbar-item"><a href="#" class="navbar-link">Sermons</a></li>
+                <li class="navbar-item"><a href="./support.html" class="navbar-link">Support</a></li>
+                <li class="navbar-item"><a href="./contacts.html" class="navbar-link">Contact Us</a></li>
+                <li class="navbar-item">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
     <div class="container">
-        <!-- Sidebar Navigation -->
         <nav class="sidebar">
             <div class="sidebar-content">
                 <div class="logo">
-                    <h3>Elevation</h3>
+                    <h3>Newlife Fountain</h3>
                 </div>
                 <ul class="nav-links">
                     <li><a href="#hero" class="nav-link active">Latest</a></li>
@@ -27,7 +55,6 @@
 
         <!-- Main Content -->
         <main class="main-content">
-            <!-- Hero Section with Parallax -->
             <section class="hero parallax-section" id="hero">
                 <div class="parallax-bg hero-bg"></div>
                 <div class="content-wrapper">
@@ -64,9 +91,9 @@
                         <span class="section-label">Latest Message</span>
                         <h2 class="section-title">Finding Peace in Chaos</h2>
                         <p class="section-meta">
-                            <span class="meta-item">Pastor John Davis</span>
+                            <span class="meta-item">Bsp Moses Wamalwa</span>
                             <span class="meta-separator">•</span>
-                            <span class="meta-item">March 26, 2025</span>
+                            <span class="meta-item">March 30, 2025</span>
                             <span class="meta-separator">•</span>
                             <span class="meta-item">Series: Unshakeable Faith</span>
                         </p>
@@ -74,7 +101,7 @@
                     
                     <div class="video-container fade-in">
                         <div class="video-wrapper">
-                            <img src="https://source.unsplash.com/random/1280x720/?church" alt="Sermon Thumbnail" class="video-placeholder">
+                            <img src="./Assets/images/sermons/bsp.jpg" alt="Sermon Thumbnail" class="video-placeholder">
                             <button class="play-button">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
                             </button>
@@ -101,11 +128,18 @@
                     </div>
                     
                     <div class="sermon-description fade-in">
-                        <p>In this powerful message, Pastor John explores how we can find peace even in life's most chaotic moments. Drawing from Philippians 4, he shares practical steps to maintain spiritual equilibrium when everything around us seems to be falling apart.</p>
+                        <p>In this powerful message, Bishop Wamalwa explores how we can find peace even in 
+                            life's most chaotic moments. Drawing from Philippians 4, he shares practical 
+                            steps to maintain spiritual equilibrium when everything around us seems to 
+                            be falling apart.
+                        </p>
                         <div class="scripture-reference">
                             <h4>Key Scripture</h4>
                             <blockquote>
-                                "Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus."
+                                "Do not be anxious about anything, but in every situation, by prayer 
+                                and petition, with thanksgiving, present your requests to God. And the 
+                                peace of God, which transcends all understanding, will guard your hearts 
+                                and your minds in Christ Jesus."
                                 <cite>— Philippians 4:6-7</cite>
                             </blockquote>
                         </div>
@@ -125,7 +159,7 @@
                         <!-- Series 1 -->
                         <div class="series-card fade-in">
                             <div class="series-image-container parallax-container">
-                                <div class="series-image" style="background-image: url('https://source.unsplash.com/random/800x600/?mountains')"></div>
+                                <div class="series-image" style="background-image: url('./Assets/images/sermons/faith.jpg')"></div>
                                 <div class="series-overlay">
                                     <span class="series-parts">6 Parts</span>
                                     <h3 class="series-title">Unshakeable Faith</h3>
@@ -143,7 +177,7 @@
                         <!-- Series 2 -->
                         <div class="series-card fade-in delay-1">
                             <div class="series-image-container parallax-container">
-                                <div class="series-image" style="background-image: url('https://source.unsplash.com/random/800x600/?light')"></div>
+                                <div class="series-image" style="background-image: url('./Assets/images/sermons/candle.jpg')"></div>
                                 <div class="series-overlay">
                                     <span class="series-parts">4 Parts</span>
                                     <h3 class="series-title">Light in Darkness</h3>
@@ -161,7 +195,7 @@
                         <!-- Series 3 -->
                         <div class="series-card fade-in delay-2">
                             <div class="series-image-container parallax-container">
-                                <div class="series-image" style="background-image: url('https://source.unsplash.com/random/800x600/?family')"></div>
+                                <div class="series-image" style="background-image: url('./Assets/images/sermons/black\ family.jpg')"></div>
                                 <div class="series-overlay">
                                     <span class="series-parts">5 Parts</span>
                                     <h3 class="series-title">Family Matters</h3>
@@ -216,10 +250,10 @@
                                 <label for="speaker-filter">Speaker</label>
                                 <select id="speaker-filter" class="filter-select">
                                     <option value="">All Speakers</option>
-                                    <option value="john">Pastor John Davis</option>
-                                    <option value="sarah">Pastor Sarah Wilson</option>
-                                    <option value="michael">Pastor Michael Thompson</option>
-                                    <option value="rebecca">Rebecca Johnson</option>
+                                    <option value="Moses">Bishop Moses Wamalwa</option>
+                                    <option value="antony">Pastor Anthony</option>
+                                    <option value="simon">Pastor Simon</option>
+                                    <option value="maili">Rev Maili</option>
                                 </select>
                             </div>
                             
@@ -238,18 +272,20 @@
                     
                     <div class="sermons-grid fade-in">
                         <!-- Sermon 1 -->
-                        <div class="sermon-card" data-series="unshakeable" data-speaker="john" data-date="2025-03-26">
+                        <div class="sermon-card" data-series="unshakeable" data-speaker="Moses" data-date="2025-03-26">
                             <div class="sermon-thumbnail">
-                                <img src="https://source.unsplash.com/random/400x225/?peace" alt="Finding Peace in Chaos">
+                                <img src="./Assets/images/sermons/peace.jpg" alt="Finding Peace in Chaos">
                                 <span class="sermon-duration">38:24</span>
                             </div>
                             <div class="sermon-card-content">
                                 <h3 class="sermon-card-title">Finding Peace in Chaos</h3>
                                 <p class="sermon-card-meta">
-                                    <span class="meta-speaker">Pastor John Davis</span>
-                                    <span class="meta-date">Mar 26, 2025</span>
+                                    <span class="meta-speaker">Bishop Moses Wamalwa</span>
+                                    <span class="meta-date">Mar 30, 2025</span>
                                 </p>
-                                <p class="sermon-card-excerpt">Building inner peace through spiritual disciplines even when life feels chaotic.</p>
+                                <p class="sermon-card-excerpt">Building inner peace through spiritual disciplines 
+                                    even when life feels chaotic.
+                                </p>
                                 <div class="sermon-card-actions">
                                     <a href="#" class="card-action-btn watch">Watch</a>
                                     <a href="#" class="card-action-btn listen">Listen</a>
@@ -258,18 +294,20 @@
                         </div>
                         
                         <!-- Sermon 2 -->
-                        <div class="sermon-card" data-series="unshakeable" data-speaker="john" data-date="2025-03-19">
+                        <div class="sermon-card" data-series="unshakeable" data-speaker="simon" data-date="2025-03-19">
                             <div class="sermon-thumbnail">
-                                <img src="https://source.unsplash.com/random/400x225/?storm" alt="Standing Firm in the Storm">
+                                <img src="./Assets/images/sermons/storm.jpg" alt="Standing Firm in the Storm">
                                 <span class="sermon-duration">42:17</span>
                             </div>
                             <div class="sermon-card-content">
                                 <h3 class="sermon-card-title">Standing Firm in the Storm</h3>
                                 <p class="sermon-card-meta">
-                                    <span class="meta-speaker">Pastor John Davis</span>
+                                    <span class="meta-speaker">Bsp Moses Wamalwa</span>
                                     <span class="meta-date">Mar 19, 2025</span>
                                 </p>
-                                <p class="sermon-card-excerpt">How to maintain your spiritual footing when life's storms threaten to knock you down.</p>
+                                <p class="sermon-card-excerpt">How to maintain your spiritual footing when life's 
+                                    storms threaten to knock you down.
+                                </p>
                                 <div class="sermon-card-actions">
                                     <a href="#" class="card-action-btn watch">Watch</a>
                                     <a href="#" class="card-action-btn listen">Listen</a>
@@ -278,18 +316,20 @@
                         </div>
                         
                         <!-- Sermon 3 -->
-                        <div class="sermon-card" data-series="unshakeable" data-speaker="sarah" data-date="2025-03-12">
+                        <div class="sermon-card" data-series="unshakeable" data-speaker="Anthony" data-date="2025-03-12">
                             <div class="sermon-thumbnail">
-                                <img src="https://source.unsplash.com/random/400x225/?anchor" alt="Anchored in Truth">
+                                <img src="./Assets/images/sermons/anchor.jpg" alt="Anchored in Truth">
                                 <span class="sermon-duration">39:51</span>
                             </div>
                             <div class="sermon-card-content">
                                 <h3 class="sermon-card-title">Anchored in Truth</h3>
                                 <p class="sermon-card-meta">
-                                    <span class="meta-speaker">Pastor Sarah Wilson</span>
+                                    <span class="meta-speaker">Pastor Anthony</span>
                                     <span class="meta-date">Mar 12, 2025</span>
                                 </p>
-                                <p class="sermon-card-excerpt">How God's unchanging truth provides stability in an ever-changing world.</p>
+                                <p class="sermon-card-excerpt">How God's unchanging truth provides stability in 
+                                    an ever-changing world
+                                </p>
                                 <div class="sermon-card-actions">
                                     <a href="#" class="card-action-btn watch">Watch</a>
                                     <a href="#" class="card-action-btn listen">Listen</a>
@@ -298,18 +338,20 @@
                         </div>
                         
                         <!-- Sermon 4 -->
-                        <div class="sermon-card" data-series="light" data-speaker="michael" data-date="2025-01-29">
+                        <div class="sermon-card" data-series="light" data-speaker="maili" data-date="2025-01-29">
                             <div class="sermon-thumbnail">
-                                <img src="https://source.unsplash.com/random/400x225/?light" alt="Shining in Dark Places">
+                                <img src="./Assets/images/sermons/light.jpg" alt="Shining in Dark Places">
                                 <span class="sermon-duration">36:08</span>
                             </div>
                             <div class="sermon-card-content">
                                 <h3 class="sermon-card-title">Shining in Dark Places</h3>
                                 <p class="sermon-card-meta">
-                                    <span class="meta-speaker">Pastor Michael Thompson</span>
+                                    <span class="meta-speaker">Rev Maili</span>
                                     <span class="meta-date">Jan 29, 2025</span>
                                 </p>
-                                <p class="sermon-card-excerpt">How to maintain your witness in challenging environments and relationships.</p>
+                                <p class="sermon-card-excerpt">How to maintain your witness in challenging environments 
+                                    and relationships.
+                                </p>
                                 <div class="sermon-card-actions">
                                     <a href="#" class="card-action-btn watch">Watch</a>
                                     <a href="#" class="card-action-btn listen">Listen</a>
@@ -318,18 +360,20 @@
                         </div>
                         
                         <!-- Sermon 5 -->
-                        <div class="sermon-card" data-series="family" data-speaker="rebecca" data-date="2024-12-04">
+                        <div class="sermon-card" data-series="family" data-speaker="Moses" data-date="2024-12-04">
                             <div class="sermon-thumbnail">
-                                <img src="https://source.unsplash.com/random/400x225/?family" alt="Building a Legacy">
+                                <img src="./Assets/images/sermons/legacy.jpg" alt="Building a Legacy">
                                 <span class="sermon-duration">41:33</span>
                             </div>
                             <div class="sermon-card-content">
                                 <h3 class="sermon-card-title">Building a Legacy</h3>
                                 <p class="sermon-card-meta">
-                                    <span class="meta-speaker">Rebecca Johnson</span>
+                                    <span class="meta-speaker">Bsp Moses</span>
                                     <span class="meta-date">Dec 4, 2024</span>
                                 </p>
-                                <p class="sermon-card-excerpt">Creating a family legacy that honors God and impacts generations to come.</p>
+                                <p class="sermon-card-excerpt">Creating a family legacy that honors God and 
+                                    impacts generations to come.
+                                </p>
                                 <div class="sermon-card-actions">
                                     <a href="#" class="card-action-btn watch">Watch</a>
                                     <a href="#" class="card-action-btn listen">Listen</a>
@@ -338,18 +382,20 @@
                         </div>
                         
                         <!-- Sermon 6 -->
-                        <div class="sermon-card" data-series="family" data-speaker="john" data-date="2024-11-27">
+                        <div class="sermon-card" data-series="family" data-speaker="maili" data-date="2024-11-27">
                             <div class="sermon-thumbnail">
-                                <img src="https://source.unsplash.com/random/400x225/?marriage" alt="Marriage by Design">
+                                <img src="./Assets/images/sermons/marriage.jpg" alt="Marriage by Design">
                                 <span class="sermon-duration">44:19</span>
                             </div>
                             <div class="sermon-card-content">
                                 <h3 class="sermon-card-title">Marriage by Design</h3>
                                 <p class="sermon-card-meta">
-                                    <span class="meta-speaker">Pastor John Davis</span>
+                                    <span class="meta-speaker">Rev Maili</span>
                                     <span class="meta-date">Nov 27, 2024</span>
                                 </p>
-                                <p class="sermon-card-excerpt">God's blueprint for a thriving, Christ-centered marriage relationship.</p>
+                                <p class="sermon-card-excerpt">God's blueprint for a thriving, Christ-centered 
+                                    marriage relationship.
+                                </p>
                                 <div class="sermon-card-actions">
                                     <a href="#" class="card-action-btn watch">Watch</a>
                                     <a href="#" class="card-action-btn listen">Listen</a>
@@ -459,49 +505,71 @@
                     <div class="speakers-grid fade-in">
                         <div class="speaker-card">
                             <div class="speaker-image-container parallax-container">
-                                <div class="speaker-image" style="background-image: url('https://source.unsplash.com/random/400x400/?pastor-man')"></div>
+                                <div class="speaker-image" style="background-image: url('./Assets/images/sermons/bishop.jpeg')"></div>
                             </div>
                             <div class="speaker-content">
-                                <h3 class="speaker-name">Pastor John Davis</h3>
+                                <h3 class="speaker-name">Bishop Moses Wamalwa</h3>
                                 <p class="speaker-role">Lead Pastor</p>
-                                <p class="speaker-bio">Pastor John has been leading our church for over 15 years with wisdom, compassion, and biblical insight.</p>
+                                <p class="speaker-bio">Bishop Wamalwa has been leading our church for over 
+                                    15 years with wisdom, compassion, and biblical insight.
+                                </p>
                                 <a href="#" class="speaker-link">View Sermons (124) <span class="arrow">→</span></a>
                             </div>
                         </div>
                         
                         <div class="speaker-card">
                             <div class="speaker-image-container parallax-container">
-                                <div class="speaker-image" style="background-image: url('https://source.unsplash.com/random/400x400/?pastor-woman')"></div>
+                                <div class="speaker-image" style="background-image: url('./Assets/images/sermons/malemo.jpeg')"></div>
                             </div>
                             <div class="speaker-content">
-                                <h3 class="speaker-name">Pastor Sarah Wilson</h3>
+                                <h3 class="speaker-name">Rev Malemo</h3>
                                 <p class="speaker-role">Teaching Pastor</p>
-                                <p class="speaker-bio">With a background in biblical studies, Pastor Sarah brings depth and clarity to Scripture in her messages.</p>
+                                <p class="speaker-bio">With a background in biblical studies, Pastor Maili 
+                                    brings depth and clarity to Scripture in his messages.
+                                </p>
                                 <a href="#" class="speaker-link">View Sermons (98) <span class="arrow">→</span></a>
                             </div>
                         </div>
                         
                         <div class="speaker-card">
                             <div class="speaker-image-container parallax-container">
-                                <div class="speaker-image" style="background-image: url('https://source.unsplash.com/random/400x400/?pastor-man-2')"></div>
+                                <div class="speaker-image" style="background-image: url('./Assets/images/maili.jpeg')"></div>
                             </div>
                             <div class="speaker-content">
-                                <h3 class="speaker-name">Pastor Michael Thompson</h3>
+                                <h3 class="speaker-name">Rev David Maili</h3>
                                 <p class="speaker-role">Youth Pastor</p>
-                                <p class="speaker-bio">Pastor Michael connects with the next generation through relevant, engaging messages that address real-life issues.</p>
+                                <p class="speaker-bio">Pastor Maili connects with the next generation through 
+                                    relevant, engaging messages that address real-life issues.
+                                </p>
                                 <a href="#" class="speaker-link">View Sermons (76) <span class="arrow">→</span></a>
                             </div>
                         </div>
                         
                         <div class="speaker-card">
                             <div class="speaker-image-container parallax-container">
-                                <div class="speaker-image" style="background-image: url('https://source.unsplash.com/random/400x400/?woman-teacher')"></div>
+                                <div class="speaker-image" style="background-image: url('./Assets/images/sermons/nyongesa.jpeg')"></div>
                             </div>
                             <div class="speaker-content">
-                                <h3 class="speaker-name">Rebecca Johnson</h3>
-                                <p class="speaker-role">Family Ministries Director</p>
-                                <p class="speaker-bio">Rebecca's passion for healthy families shines through in her practical, Scripture-based teaching.</p>
+                                <h3 class="speaker-name">Rev Francis</h3>
+                                <p class="speaker-role">Family Ministries </p>
+                                <p class="speaker-bio">Francis' passion for healthy families shines through in his 
+                                    practical, Scripture-based teaching.
+                                </p>
                                 <a href="#" class="speaker-link">View Sermons (52) <span class="arrow">→</span></a>
+                            </div>
+                        </div>
+
+                        <div class="speaker-card">
+                            <div class="speaker-image-container parallax-container">
+                                <div class="speaker-image" style="background-image: url('./Assets/images/makhanu.jpeg')"></div>
+                            </div>
+                            <div class="speaker-content">
+                                <h3 class="speaker-name">Rev Makhanu</h3>
+                                <p class="speaker-role">Finance Pastor</p>
+                                <p class="speaker-bio">Pastor Makhanu has been overseeing the ministry 
+                                    finances with faithfullness and diligence over the years.
+                                </p>
+                                <a href="#" class="speaker-link">View Sermons (124) <span class="arrow">→</span></a>
                             </div>
                         </div>
                     </div>
@@ -589,7 +657,7 @@
                             </form>
                         </div>
                         <div class="subscribe-image parallax-container">
-                            <div class="subscribe-bg" style="background-image: url('https://source.unsplash.com/random/600x400/?church-worship')"></div>
+                            <div class="subscribe-bg" style="background-image: url('./Assets/images/14\ new.jpg')"></div>
                         </div>
                     </div>
                 </div>
@@ -597,6 +665,7 @@
         </main>
     </div>
 
-    <script src="sermons.js"></script>
+    <script src="./js/sermon.js"></script>
+    <script src="./js/navbar.js"></script>
 </body>
 </html>
