@@ -271,3 +271,50 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Parallax effect for sermon section background
+    function handleSermonsParallax() {
+      const sermonsSection = document.querySelector(".sermons-preview-section")
+      if (!sermonsSection) return
+  
+      const parallaxBg = sermonsSection.querySelector(".parallax-bg")
+      if (!parallaxBg) return
+  
+      const scrollPosition = window.pageYOffset
+      const sectionTop = sermonsSection.offsetTop
+      const sectionHeight = sermonsSection.offsetHeight
+  
+      // Only apply parallax if section is in view
+      if (scrollPosition > sectionTop - window.innerHeight && scrollPosition < sectionTop + sectionHeight) {
+        const speed = 0.4 // Adjust for faster/slower parallax
+        const yPos = (scrollPosition - sectionTop) * speed
+        parallaxBg.style.transform = `translateY(${yPos}px)`
+      }
+    }
+  
+    // Call on scroll and on initial load
+    window.addEventListener("scroll", handleSermonsParallax)
+    handleSermonsParallax()
+  
+    // Animate sermon cards on hover
+    const sermonCards = document.querySelectorAll(".sermon-card")
+  
+    sermonCards.forEach((card) => {
+      card.addEventListener("mouseenter", function () {
+        const image = this.querySelector(".sermon-image")
+        if (image) {
+          image.style.transform = "scale(1.1)"
+        }
+      })
+  
+      card.addEventListener("mouseleave", function () {
+        const image = this.querySelector(".sermon-image")
+        if (image) {
+          image.style.transform = "scale(1)"
+        }
+      })
+    })
+  })
+  
+  
