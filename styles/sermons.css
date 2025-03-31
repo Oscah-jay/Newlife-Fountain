@@ -27,7 +27,7 @@ body {
     height: 100vh;
     position: fixed;
     right: 0;
-    top: 0;
+    margin-top: 110px;
     background-color: #fff;
     border-left: 1px solid #eaeaea;
     z-index: 100;
@@ -1183,3 +1183,224 @@ cite {
         display: none;
     }
 }
+
+/* More Leaders Button Styles */
+.more-leaders-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  
+  .more-leaders-btn {
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .more-leaders-btn:hover {
+    background-color: #222;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .more-leaders-btn .arrow {
+    transition: transform 0.3s ease;
+  }
+  
+  .more-leaders-btn:hover .arrow {
+    transform: translateX(5px);
+  }
+  
+  /* Leaders Overlay Styles */
+  .leaders-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    overflow-y: auto;
+  }
+  
+  .leaders-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .overlay-content {
+    background-color: #fff;
+    width: 90%;
+    max-width: 1200px;
+    max-height: 90vh;
+    border-radius: 8px;
+    padding: 3rem;
+    position: relative;
+    overflow-y: auto;
+  }
+  
+  .close-overlay {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .close-overlay:hover {
+    color: #666;
+  }
+  
+  .overlay-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  .overlay-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #333;
+    margin: 1rem auto 0;
+  }
+  
+  .overlay-speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  /* Responsive styles for the overlay */
+  @media (max-width: 992px) {
+    .overlay-content {
+      padding: 2rem;
+      width: 95%;
+    }
+  
+    .overlay-title {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .overlay-speakers-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .overlay-content {
+      padding: 1.5rem;
+    }
+  }
+  
+  /* Add these styles to the existing speakers grid */
+  .speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .speaker-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .speaker-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .speaker-image-container {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .speaker-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease-out;
+  }
+  
+  .speaker-image-container:hover .speaker-image {
+    transform: scale(1.1);
+  }
+  
+  .speaker-content {
+    padding: 1.5rem;
+  }
+  
+  .speaker-name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .speaker-role {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+  
+  .speaker-bio {
+    margin-bottom: 1.5rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .speaker-link {
+    display: inline-flex;
+    align-items: center;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid #333;
+    transition: all 0.3s ease;
+    gap: 0.5rem;
+  }
+  
+  .speaker-link:hover {
+    color: #555;
+    border-color: #555;
+  }
+  
+  .speaker-link .arrow {
+    transition: transform 0.3s ease;
+  }
+  
+  .speaker-link:hover .arrow {
+    transform: translateX(5px);
+  }
+  
+  

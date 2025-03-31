@@ -339,3 +339,76 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Get the button, overlay, and close button elements
+  const moreLeadersBtn = document.getElementById("more-leaders-btn")
+  const leadersOverlay = document.getElementById("leaders-overlay")
+  const closeOverlayBtn = document.getElementById("close-overlay")
+
+  // Function to open the overlay
+  function openOverlay() {
+    leadersOverlay.classList.add("active")
+    document.body.style.overflow = "hidden" // Prevent scrolling of the background
+  }
+
+  // Function to close the overlay
+  function closeOverlay() {
+    leadersOverlay.classList.remove("active")
+    document.body.style.overflow = "" // Restore scrolling
+  }
+
+  // Event listeners
+  if (moreLeadersBtn) {
+    moreLeadersBtn.addEventListener("click", openOverlay)
+  }
+
+  if (closeOverlayBtn) {
+    closeOverlayBtn.addEventListener("click", closeOverlay)
+  }
+
+  // Close overlay when clicking outside the content
+  leadersOverlay.addEventListener("click", (event) => {
+    if (event.target === leadersOverlay) {
+      closeOverlay()
+    }
+  })
+
+  // Close overlay when pressing Escape key
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && leadersOverlay.classList.contains("active")) {
+      closeOverlay()
+    }
+  })
+
+  // Apply parallax effect to speaker images in the overlay
+  function handleSpeakerParallax() {
+    const speakerContainers = document.querySelectorAll(".parallax-container")
+
+    speakerContainers.forEach((container) => {
+      const image = container.querySelector(".speaker-image")
+      if (!image) return
+
+      const containerRect = container.getBoundingClientRect()
+      const containerCenter = containerRect.top + containerRect.height / 2
+      const windowCenter = window.innerHeight / 2
+      const distanceFromCenter = containerCenter - windowCenter
+
+      // Calculate parallax amount based on distance from center of viewport
+      const parallaxAmount = distanceFromCenter * 0.05
+
+      // Apply parallax effect if container is in viewport
+      if (containerRect.top < window.innerHeight && containerRect.bottom > 0) {
+        image.style.transform = `translateY(${parallaxAmount}px)`
+      }
+    })
+  }
+
+  // Call parallax function on scroll and when overlay is opened
+  window.addEventListener("scroll", handleSpeakerParallax)
+  moreLeadersBtn.addEventListener("click", () => {
+    // Wait for overlay to be visible before applying parallax
+    setTimeout(handleSpeakerParallax, 300)
+  })
+})
+
