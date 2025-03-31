@@ -316,5 +316,107 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     })
   })
+
+  document.addEventListener("DOMContentLoaded", () => {
+    // Countdown Timer for Conference
+    let countdownInterval // Declare countdownInterval
+    function updateCountdown() {
+      // Set the date we're counting down to (November 24, 2023)
+      const countdownDate = new Date("June 24, 2025 09:00:00").getTime()
+      const now = new Date().getTime()
+      const distance = countdownDate - now
+  
+      // Time calculations for days, hours, minutes and seconds
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24))
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000)
+  
+      // Display the result
+      document.getElementById("countdown-days").textContent = days.toString().padStart(2, "0")
+      document.getElementById("countdown-hours").textContent = hours.toString().padStart(2, "0")
+      document.getElementById("countdown-minutes").textContent = minutes.toString().padStart(2, "0")
+      document.getElementById("countdown-seconds").textContent = seconds.toString().padStart(2, "0")
+  
+      // If the countdown is finished, display a message
+      if (distance < 0) {
+        clearInterval(countdownInterval)
+        document.getElementById("countdown-days").textContent = "00"
+        document.getElementById("countdown-hours").textContent = "00"
+        document.getElementById("countdown-minutes").textContent = "00"
+        document.getElementById("countdown-seconds").textContent = "00"
+  
+        const countdownContainer = document.querySelector(".countdown-container")
+        if (countdownContainer) {
+          countdownContainer.innerHTML = '<h3 class="event-live">Event In Progress!</h3>'
+        }
+      }
+    }
+  
+    // Update the countdown every 1 second
+    if (document.getElementById("conference-countdown")) {
+      updateCountdown() // Run once immediately
+      countdownInterval = setInterval(updateCountdown, 1000)
+    }
+  
+    // Newsletter form submission
+    const newsletterForm = document.querySelector(".newsletter-form")
+    if (newsletterForm) {
+      newsletterForm.addEventListener("submit", function (e) {
+        e.preventDefault()
+  
+        const emailInput = this.querySelector('input[type="email"]')
+        const email = emailInput.value
+  
+        // Simulate form submission
+        const subscribeBtn = this.querySelector(".subscribe-btn")
+        const originalText = subscribeBtn.textContent
+  
+        subscribeBtn.textContent = "Subscribing..."
+        subscribeBtn.disabled = true
+  
+        // Simulate API call with timeout
+        setTimeout(() => {
+          // Reset form
+          newsletterForm.reset()
+  
+          // Show success message
+          const formGroup = document.querySelector(".form-group")
+          const successMessage = document.createElement("div")
+          successMessage.classList.add("success-message")
+          successMessage.innerHTML = "<p>Thank you for subscribing! You will now receive our weekly updates.</p>"
+  
+          formGroup.innerHTML = ""
+          formGroup.appendChild(successMessage)
+  
+          // Hide consent checkbox
+          document.querySelector(".form-consent").style.display = "none"
+        }, 1500)
+      })
+    }
+  
+    // Animate elements on scroll
+    const fadeElements = document.querySelectorAll(".fade-in")
+  
+    const fadeObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible")
+          }
+        })
+      },
+      {
+        threshold: 0.1,
+        rootMargin: "0px 0px -100px 0px",
+      },
+    )
+  
+    fadeElements.forEach((element) => {
+      fadeObserver.observe(element)
+    })
+  })
+  
+  
   
   
