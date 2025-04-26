@@ -1,4 +1,9 @@
+/** @type {any} */
+const emailjs = window.emailjs;
+
 document.addEventListener('DOMContentLoaded', function() {
+    // @ts-ignore
+    emailjs.init('1gfvPD48p-TmqLQ2r');
     // Animate cards on page load
     const cards = document.querySelectorAll('.contact-card');
     
@@ -20,12 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const cardTitle = this.closest('.card-content').querySelector('.card-title').textContent;
             document.querySelector('.modal-title').textContent = `Contact Us - ${cardTitle}`;
             
-            // Set the department in the hidden field
-            const departmentField = document.getElementById('department-field');
-            if (departmentField) {
-                departmentField.value = cardTitle;
-            }
-            
             // Show modal with animation
             modal.classList.add('show');
             document.body.style.overflow = 'hidden'; // Prevent scrolling
@@ -39,9 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Close modal when clicking the close button
-    if (closeBtn) {
-        closeBtn.addEventListener('click', closeModal);
-    }
+    closeBtn.addEventListener('click', closeModal);
     
     // Close modal when clicking outside the modal content
     modal.addEventListener('click', function(e) {
@@ -64,142 +61,103 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 300);
     }
     
-    // Fix the nested form issue in the HTML
-    const fixFormStructure = () => {
-        const contactForm = document.getElementById('contactForm');
-        if (!contactForm) return;
-        
-        const nestedForm = contactForm.querySelector('form');
-        
-        if (nestedForm) {
-            // Get the action URL from the nested form
-            const formAction = nestedForm.getAttribute('action');
-            
-            // Remove the nested form
-            nestedForm.remove();
-            
-            // Set the action on the parent form
-            contactForm.setAttribute('action', formAction);
-            contactForm.setAttribute('method', 'POST');
-        }
+    // Form submission with EmailJS
+const contactForm = document.querySelector('.contact-form');
+
+contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Simple form validation
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+    
+    if (!name || !email || !subject || !message) {
+        alert('Please fill in all fields');
+        return;
+    }
+    
+    // Update button state
+    const submitButton = document.querySelector('.submit-button');
+    submitButton.textContent = 'Sending...';
+    submitButton.disabled = true;
+    
+    // Get the department from the modal title
+    const department = document.querySelector('.modal-title').textContent.replace('Contact Us - ', '');
+    
+    // Prepare template parameters
+    const templateParams = {
+        from_name: name,
+        from_email: email,
+        subject: subject,
+        message: message,
+        department: department,
     };
     
-    // Call the function to fix the form structure
-    fixFormStructure();
-    
-    // Form submission with Formspree
-    const contactForm = document.getElementById('contactForm');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
+    // Send email using 
+    // @ts-ignore
+    emailjs.send('service_xgj7gys', 'template_gjfq308', templateParams)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
             
-            // Simple form validation
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
+            // Create success message
+            const successMessage = document.createElement('div');
+            successMessage.className = 'success-message';
+            successMessage.textContent = 'Your message has been sent successfully! We\'ll get back to you soon.';
             
-            if (!name || !email || !subject || !message) {
-                alert('Please fill in all fields');
-                return;
-            }
+            // Replace form with success message
+            contactForm.innerHTML = '';
+            contactForm.appendChild(successMessage);
             
-            // Update button state
-            const submitButton = document.querySelector('.submit-button');
-            submitButton.textContent = 'Sending...';
-            submitButton.disabled = true;
+            // Show success message with animation
+            setTimeout(() => {
+                successMessage.classList.add('show');
+            }, 100);
             
-            // Get the form action (Formspree URL)
-            const formAction = this.getAttribute('action') || 'https://formspree.io/f/xdoqvyna';
-            
-            // Prepare form data for Formspree
-            const formData = new FormData(this);
-            
-            // Send the form data to Formspree
-            fetch(formAction, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            })
-            .then(response => {
-                if (response.ok) {
-                    return response.json();
-                }
-                throw new Error('Network response was not ok.');
-            })
-            .then(data => {
-                console.log('SUCCESS!', data);
+            // Close modal after a delay
+            setTimeout(() => {
+                closeModal();
                 
-                // Create success message
-                const successMessage = document.createElement('div');
-                successMessage.className = 'success-message';
-                successMessage.textContent = 'Your message has been sent successfully! We\'ll get back to you soon.';
-                
-                // Replace form with success message
-                contactForm.innerHTML = '';
-                contactForm.appendChild(successMessage);
-                
-                // Show success message with animation
+                // Reset form after modal is closed
                 setTimeout(() => {
-                    successMessage.classList.add('show');
-                }, 100);
-                
-                // Close modal after a delay
-                setTimeout(() => {
-                    closeModal();
-                    
-                    // Reset form after modal is closed
-                    setTimeout(() => {
-                        resetContactForm();
-                    }, 500);
-                }, 2000);
-            })
-            .catch(error => {
-                console.error('FAILED...', error);
-                
-                // Show error message
-                alert('Failed to send email. Please try again later or contact us directly at newlifefountainmin@gmail.com');
-                
-                // Reset button state
-                submitButton.textContent = 'Send Message';
-                submitButton.disabled = false;
-            });
+                    resetContactForm();
+                }, 500);
+            }, 2000);
+        }, function(error) {
+            console.log('FAILED...', error);
+            
+            // Show error message
+            alert('Failed to send email. Please try again later or contact us directly at newlifefountainmin@gmail.com');
+            
+            // Reset button state
+            submitButton.textContent = 'Send Message';
+            submitButton.disabled = false;
         });
-    }
+});
 
-    // Function to reset the contact form
-    function resetContactForm() {
-        if (!contactForm) return;
-        
-        contactForm.innerHTML = `
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" autocomplete="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" autocomplete="email" required>
-            </div>
-            <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" autocomplete="off" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" autocomplete="off" required></textarea>
-            </div>
-            <!-- Hidden field to capture which department was selected -->
-            <input type="hidden" name="department" id="department-field">
-            <button type="submit" class="submit-button">Send Message</button>
-        `;
-        
-        // Make sure the form has the correct action
-        contactForm.setAttribute('action', 'https://formspree.io/f/xdoqvyna');
-        contactForm.setAttribute('method', 'POST');
-    }
+// Function to reset the contact form
+function resetContactForm() {
+    contactForm.innerHTML = `
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-button">Send Message</button>
+    `;
+}
 
     // Add hover effects for buttons
     buttons.forEach(button => {
@@ -238,32 +196,18 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', createRipple);
     });
     
-    // Add CSS for animations and effects
+    // Add this CSS for the ripple effect
     const style = document.createElement('style');
     style.textContent = `
-        /* Card animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        /* Button effects */
         .contact-button {
             position: relative;
             overflow: hidden;
-            transition: transform 0.3s ease;
         }
         
         .ripple {
             position: absolute;
             border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.3);
+            background-color: rgba(0, 0, 0, 0.2);
             transform: scale(0);
             animation: ripple 0.6s linear;
             pointer-events: none;
@@ -278,57 +222,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
         .contact-button.pressed {
             transform: scale(0.95);
-        }
-        
-        /* Modal styles */
-        .contact-modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            z-index: 1000;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-        
-        .contact-modal.show {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            opacity: 1;
-        }
-        
-        .success-message {
-            padding: 2rem;
-            text-align: center;
-            font-size: 1.2rem;
-            color: #4CAF50;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-        
-        .success-message.show {
-            opacity: 1;
-        }
-        
-        /* Pulse animation for icons */
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.1);
-            }
-            100% {
-                transform: scale(1);
-            }
-        }
-        
-        .contact-icon.pulse {
-            animation: pulse 1.5s infinite;
         }
     `;
     document.head.appendChild(style);
@@ -352,6 +245,12 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.contact-card').forEach(card => {
         observer.observe(card);
     });
+});
+
+// Add this code to your existing JavaScript file
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Existing code...
     
     // Animation for Get In Touch section
     function initGetInTouchAnimations() {
@@ -405,7 +304,31 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // Add pulse animation CSS
+    function addPulseAnimation() {
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes pulse {
+                0% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.1);
+                }
+                100% {
+                    transform: scale(1);
+                }
+            }
+            
+            .contact-icon.pulse {
+                animation: pulse 1.5s infinite;
+            }
+        `;
+        document.head.appendChild(style);
+    }
+    
     // Initialize Get In Touch section effects
     initGetInTouchAnimations();
     initContactHoverEffects();
+    addPulseAnimation();
 });
