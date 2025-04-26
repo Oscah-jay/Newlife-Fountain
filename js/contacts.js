@@ -1,3 +1,4 @@
+import emailjs from '@emailjs/browser';
 document.addEventListener('DOMContentLoaded', function() {
     // Animate cards on page load
     const cards = document.querySelectorAll('.contact-card');
