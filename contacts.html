@@ -6,12 +6,6 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="./styles/contacts.css">
     <link rel="stylesheet" href="./styles/navbar.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script type="text/javascript">
-   (function() {
-      emailjs.init("1gfvPD48p-TmqLQ2r");
-   })();
-</script>
 </head>
 <body>
 
@@ -111,6 +105,7 @@
                     <span class="close-modal">&times;</span>
                     <h2 class="modal-title">Contact Us</h2>
                     <form class="contact-form" id="contactForm">
+                        <form id="contact-form" class="contact-form" action="https://formspree.io/f/xdoqvyna" method="POST"></form>
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
