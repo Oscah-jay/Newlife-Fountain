@@ -6,6 +6,7 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="./styles/contacts.css">
     <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script type="text/javascript">
    (function() {
@@ -103,36 +104,41 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- Contact Form Modal -->
-            <div class="contact-modal" id="contactModal">
-                
-                <div class="modal-content">
+
+             <!-- Contact Form Modal -->
+             <div class="contact-modal" id="contactModal">
+                 <div class="modal-content">
                     <span class="close-modal">&times;</span>
                     <h2 class="modal-title">Contact Us</h2>
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <!-- Hidden field to capture which department was selected -->
-                        <input type="hidden" name="department" id="department-field">
-                        <button type="submit" class="submit-button">Send Message</button>
-                    </form>
-                </div>
+                    <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Web3Forms required fields -->
+            <input type="hidden" name="access_key" value="4b1f4d1a-40a0-48c8-91a8-da848e5102bb">
+            <input type="checkbox" name="botcheck" style="display: none;">
+            <input type="hidden" name="from_name" value="Newlife Fountain Ministries Contact Form">
+            <input type="hidden" name="subject" value="New Contact Form Submission">
+            
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
             </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" autocomplete="off" required></textarea>
+            </div>
+            <!-- Hidden field to capture which department was selected -->
+            <input type="hidden" name="department" id="department-field">
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </div>
+</div>
         </div>
     </div>
 
@@ -169,10 +175,73 @@
                         </div>
                     </div>
                     <h3 class="contact-info-title">PHONE</h3>
-                    <div class="contact-info-content">
-                        <p class="organization-name">Newlife Fountain Administration</p>
-                        <p class="contact-detail">+254 724656638</p>
-                    </div>
+<div class="contact-info-content">
+    <p class="organization-name">Newlife Fountain Administration</p>
+    <div class="contact-actions">
+        <a href="tel:+254724656638" class="phone-action call-action">
+           <i class="fa fa-phone"></i>
+            <span class="contact-detail">+254 724656638</span>
+        </a>
+        <a href="sms:+254724656638" class="phone-action text-action">
+            <i class="fa fa-envelope"></i>
+            <span>Text us</span>
+        </a>
+    </div>
+</div>
+
+<style>
+    .contact-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 5px;
+    }
+    
+    .phone-action {
+        display: flex;
+        align-items: center;
+        padding: 8px 12px;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-weight: 500;
+    }
+    
+    .call-action {
+        background-color: grey;
+        color: white;
+    }
+    
+    .text-action {
+        background-color: grey;
+        color: white;
+    }
+    
+    .phone-action:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .phone-icon, .text-icon {
+        margin-right: 8px;
+        font-size: 16px;
+    }
+    
+    .contact-detail {
+        font-weight: 500;
+    }
+    
+    @media (max-width: 768px) {
+        .contact-actions {
+            flex-direction: row;
+        }
+        
+        .phone-action {
+            flex: 1;
+            justify-content: center;
+        }
+    }
+</style>
                 </div>
                 
                 <!-- Email Column -->
