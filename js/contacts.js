@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     // Create success message
                     const successMessage = document.createElement('div');
                     successMessage.className = 'success-message';
-                    successMessage.textContent = 'Your message has been sent successfully! We\'ll get back to you soon.';
+                    successMessage.textContent = 'Your message has been sent successfully! We\'ll get back to you soon. Thank you for walking the path of righteousness!';
                     
                     // Replace form with success message
                     contactForm.innerHTML = '';
