@@ -1,13 +1,13 @@
 /* Navigation Bar Variables */
 :root {
-    --primary-color: #4338ca;
+    --primary-color: #193b0a;
     --secondary-color: #9d174d;
     --text-color: #1f2937;
     --bg-color: #f9fafb;
     --nav-bg: rgba(255, 255, 255, 0.9);
     --nav-text: #1f2937;
-    --nav-active: #4338ca;
-    --nav-hover: #6366f1;
+    --nav-active: #193b0a;
+    --nav-hover: #e1b62f;
     --divider-color: rgba(255, 255, 255, 0.5);
     --shadow-color: rgba(0, 0, 0, 0.1);
 }
