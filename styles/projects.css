@@ -48,7 +48,7 @@ body {
 }
 
 .logo h3 {
-    color: #333;
+    color: #193b0a;
     font-weight: 600;
 }
 
@@ -62,7 +62,7 @@ body {
 .nav-link {
     display: block;
     padding: 0.5rem 1rem;
-    color: #666;
+    color: #193b0a;
     text-decoration: none;
     transition: all 0.3s ease;
     border-radius: 4px;
@@ -70,7 +70,7 @@ body {
 }
 
 .nav-link:hover, .nav-link.active {
-    color: #333;
+    color: #e1b62f;
     background-color: #f5f5f5;
 }
 
@@ -113,7 +113,7 @@ body {
     font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 1.5rem;
-    color: #222;
+    color: #193b0a;
     line-height: 1.2;
     max-width: 900px;
 }
@@ -141,7 +141,7 @@ body {
 .stat-number {
     font-size: 3rem;
     font-weight: 700;
-    color: #333;
+    color: #193b0a;
     margin-bottom: 0.5rem;
 }
 
@@ -182,14 +182,14 @@ body {
     display: block;
     width: 80px;
     height: 4px;
-    background-color: #333;
+    background-color: #193b0a;
     margin: 1rem auto 0;
 }
 
 .section-subtitle {
     text-align: center;
     font-size: 1.2rem;
-    color: #666;
+    color: #e1b62f;
     margin-bottom: 3rem;
 }
 
@@ -226,9 +226,9 @@ body {
 }
 
 .category-btn:hover, .category-btn.active {
-    background-color: #333;
+    background-color: #e1b62f;
     color: #fff;
-    border-color: #333;
+    border-color: #e1b62f;
 }
 
 /* Featured Projects */
@@ -314,7 +314,7 @@ body {
 }
 
 .project-link {
-    color: #333;
+    color: #193b0a;
     font-weight: 600;
     text-decoration: none;
     border-bottom: 2px solid #333;
@@ -322,7 +322,7 @@ body {
 }
 
 .project-link:hover {
-    color: #555;
+    color: #e1b62f;
     border-color: #555;
 }
 
@@ -397,7 +397,7 @@ body {
     content: "•";
     position: absolute;
     left: 0;
-    color: #333;
+    color: #193b0a;
 }
 
 .project-detail-stats {
@@ -416,7 +416,7 @@ body {
 
 .detail-stat .stat-number {
     font-size: 3rem;
-    color: #333;
+    color: #193b0a;
     display: block;
     margin-bottom: 0.5rem;
 }
@@ -429,7 +429,7 @@ body {
 .cta-button {
     display: block;
     padding: 1rem;
-    background-color: #333;
+    background-color: #193b0a;
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -439,7 +439,7 @@ body {
 }
 
 .cta-button:hover {
-    background-color: #222;
+    background-color: #e1b62f;
 }
 
 /* Testimonials Section */
@@ -523,7 +523,7 @@ body {
     font-size: 1.5rem;
     cursor: pointer;
     padding: 0.5rem;
-    color: #333;
+    color: #193b0a;
 }
 
 .testimonial-dots {
@@ -542,7 +542,7 @@ body {
 }
 
 .dot.active {
-    background-color: #333;
+    background-color: #193b0a;
 }
 
 /* Get Involved Section */
@@ -594,16 +594,16 @@ body {
 
 .involvement-link {
     display: inline-block;
-    color: #333;
+    color: #193b0a;
     font-weight: 600;
     text-decoration: none;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #193b0a;
     transition: all 0.3s ease;
 }
 
 .involvement-link:hover {
-    color: #555;
-    border-color: #555;
+    color: #e1b62f;
+    border-color: #e1b62f;
 }
 
 .contact-form-container {
@@ -663,7 +663,7 @@ body {
 
 .submit-btn {
     padding: 1rem;
-    background-color: #333;
+    background-color: #193b0a;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -674,7 +674,7 @@ body {
 }
 
 .submit-btn:hover {
-    background-color: #222;
+    background-color: #e1b62f;
 }
 
 /* Animation Classes */
