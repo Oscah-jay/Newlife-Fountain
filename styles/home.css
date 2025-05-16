@@ -828,6 +828,7 @@ icon, .text{
     .container {
         flex-direction: column;
         max-width: 100%;
+        margin-bottom: 120px;
     }
     
     .about-content {
