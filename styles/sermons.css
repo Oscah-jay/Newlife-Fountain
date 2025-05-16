@@ -47,7 +47,7 @@ body {
 }
 
 .logo h3 {
-    color: #333;
+    color: #193b0a;
     font-weight: 600;
 }
 
@@ -61,7 +61,7 @@ body {
 .nav-link {
     display: block;
     padding: 0.5rem 1rem;
-    color: #666;
+    color: #193b0a;
     text-decoration: none;
     transition: all 0.3s ease;
     border-radius: 4px;
@@ -69,7 +69,7 @@ body {
 }
 
 .nav-link:hover, .nav-link.active {
-    color: #333;
+    color: #e1b62f;
     background-color: #f5f5f5;
 }
 
@@ -111,7 +111,7 @@ body {
     font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 1.5rem;
-    color: #222;
+    color: #193b0a;
     line-height: 1.2;
     max-width: 900px;
 }
@@ -140,24 +140,24 @@ body {
 }
 
 .primary-btn {
-    background-color: #333;
+    background-color: #193b0a;
     color: #fff;
 }
 
 .primary-btn:hover {
-    background-color: #222;
+    background-color: #e1b62f;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .secondary-btn {
     background-color: transparent;
-    color: #333;
-    border: 2px solid #333;
+    color: #e1b62f;
+    border: 2px solid #e1b62f;
 }
 
 .secondary-btn:hover {
-    background-color: #f5f5f5;
+    background-color: #193b0a;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
@@ -178,7 +178,7 @@ body {
 .stat-number {
     font-size: 3rem;
     font-weight: 700;
-    color: #333;
+    color: #193b0a;
     margin-bottom: 0.5rem;
 }
 
@@ -219,7 +219,7 @@ body {
     display: block;
     width: 80px;
     height: 4px;
-    background-color: #333;
+    background-color: #193b0a;
     margin: 1rem auto 0;
 }
 
@@ -312,7 +312,7 @@ body {
 }
 
 .play-button:hover {
-    background-color: #fff;
+    background-color: #e1b62f;
     transform: translate(-50%, -50%) scale(1.1);
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
@@ -330,8 +330,8 @@ body {
     align-items: center;
     gap: 0.5rem;
     padding: 0.75rem 1.5rem;
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: #193b0a;
+    color: #fff;
     border-radius: 30px;
     text-decoration: none;
     font-weight: 500;
@@ -339,7 +339,7 @@ body {
 }
 
 .action-btn:hover {
-    background-color: #eaeaea;
+    background-color: #e1b62f;
     transform: translateY(-3px);
 }
 
@@ -348,7 +348,7 @@ body {
     margin: 0 auto;
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #444;
+    color: #193b0a;
 }
 
 .scripture-reference {
@@ -361,12 +361,12 @@ body {
 .scripture-reference h4 {
     margin-bottom: 1rem;
     font-size: 1.2rem;
-    color: #333;
+    color: #193b0a;
 }
 
 blockquote {
     font-style: italic;
-    color: #555;
+    color: #193b0a;
     line-height: 1.8;
     position: relative;
     padding-left: 2rem;
@@ -378,7 +378,7 @@ blockquote::before {
     left: 0;
     top: -0.5rem;
     font-size: 3rem;
-    color: #ddd;
+    color: #e1b62f;
     font-family: Georgia, serif;
 }
 
@@ -471,16 +471,16 @@ cite {
 }
 
 .series-link {
-    color: #333;
+    color: #193b0a;
     font-weight: 600;
     text-decoration: none;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #193b0a;
     transition: all 0.3s ease;
 }
 
 .series-link:hover {
-    color: #555;
-    border-color: #555;
+    color: #e1b62f;
+    border-color: #e1b62f;
 }
 
 .view-all-container {
@@ -491,7 +491,7 @@ cite {
 .view-all-link {
     display: inline-flex;
     align-items: center;
-    color: #333;
+    color: #193b0a;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -503,7 +503,7 @@ cite {
 }
 
 .view-all-link:hover {
-    color: #555;
+    color: #e1b62f;
 }
 
 .view-all-link:hover .arrow {
@@ -555,7 +555,7 @@ cite {
 }
 
 .search-button:hover {
-    color: #333;
+    color: #193b0a;
 }
 
 .filter-controls {
@@ -652,7 +652,7 @@ cite {
 }
 
 .sermon-card-excerpt {
-    color: #555;
+    color: #193b0a;
     margin-bottom: 1.5rem;
     font-size: 0.95rem;
     line-height: 1.6;
@@ -675,21 +675,21 @@ cite {
 }
 
 .card-action-btn.watch {
-    background-color: #333;
+    background-color: #193b0a;
     color: #fff;
 }
 
 .card-action-btn.watch:hover {
-    background-color: #222;
+    background-color: #e1b62f;
 }
 
 .card-action-btn.listen {
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #193b0a;
+    color: #f0f0f0;
 }
 
 .card-action-btn.listen:hover {
-    background-color: #e5e5e5;
+    background-color: #e1b62f;
 }
 
 .pagination {
@@ -705,23 +705,23 @@ cite {
     justify-content: center;
     width: 40px;
     height: 40px;
-    border: 1px solid #ddd;
+    border: 1px solid #193b0a;
     border-radius: 4px;
-    background-color: #fff;
-    color: #333;
+    background-color: #193b0a;
+    color: #fff;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .pagination-btn.active {
-    background-color: #333;
+    background-color: #e1b62f;
     color: #fff;
-    border-color: #333;
+    border-color: #e1b62f;
 }
 
 .pagination-btn:hover:not(.active) {
-    background-color: #f5f5f5;
+    background-color: #193b0a;
 }
 
 .pagination-btn.next {
@@ -751,17 +751,17 @@ cite {
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    background-color: #f9f9f9;
+    background-color: #193b0a;
     border-radius: 8px;
     text-decoration: none;
-    color: #333;
+    color: #fff;
     transition: all 0.3s ease;
 }
 
 .topic-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    background-color: #333;
+    background-color: #e1b62f;
     color: #fff;
 }
 
@@ -771,15 +771,15 @@ cite {
     justify-content: center;
     width: 60px;
     height: 60px;
-    background-color: #fff;
+    background-color: #193b0a;
     border-radius: 50%;
     margin-bottom: 1.5rem;
-    color: #333;
+    color: #fff;
     transition: all 0.3s ease;
 }
 
 .topic-card:hover .topic-icon {
-    background-color: #f0f0f0;
+    background-color: #e1b62f;
 }
 
 .topic-title {
@@ -868,7 +868,7 @@ cite {
 .speaker-link {
     display: inline-flex;
     align-items: center;
-    color: #333;
+    color: #193b0a;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -917,10 +917,10 @@ cite {
     justify-content: center;
     width: 60px;
     height: 60px;
-    background-color: #fff;
+    background-color: #193b0a;
     border-radius: 50%;
     margin-bottom: 1.5rem;
-    color: #333;
+    color: #fff;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
@@ -937,16 +937,16 @@ cite {
 
 .resource-link {
     display: inline-block;
-    color: #333;
+    color: #193b0a;
     font-weight: 600;
     text-decoration: none;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #193b0a;
     transition: all 0.3s ease;
 }
 
 .resource-link:hover {
-    color: #555;
-    border-color: #555;
+    color: #e1b62f;
+    border-color: #e1b62f;
 }
 
 .podcast-links {
@@ -961,16 +961,16 @@ cite {
     align-items: center;
     gap: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: #fff;
+    background-color: #193b0a;
     border-radius: 30px;
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-size: 0.9rem;
     transition: all 0.3s ease;
 }
 
 .podcast-platform:hover {
-    background-color: #333;
+    background-color: #e1b62f;
     color: #fff;
     transform: translateY(-3px);
 }
@@ -1033,7 +1033,7 @@ cite {
     top: 50%;
     transform: translateY(-50%);
     padding: 0.5rem 1rem;
-    background-color: #333;
+    background-color: #193b0a;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -1043,7 +1043,7 @@ cite {
 }
 
 .subscribe-btn:hover {
-    background-color: #222;
+    background-color: #e1b62f;
 }
 
 .checkbox-container {
@@ -1194,7 +1194,7 @@ cite {
   
   .more-leaders-btn {
     padding: 1rem 2rem;
-    background-color: #333;
+    background-color: #193b0a;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -1208,7 +1208,7 @@ cite {
   }
   
   .more-leaders-btn:hover {
-    background-color: #222;
+    background-color: #e1b62f;
     transform: translateY(-3px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
@@ -1382,17 +1382,17 @@ cite {
   .speaker-link {
     display: inline-flex;
     align-items: center;
-    color: #333;
+    color: #193b0a;
     font-weight: 600;
     text-decoration: none;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #193b0a;
     transition: all 0.3s ease;
     gap: 0.5rem;
   }
   
   .speaker-link:hover {
-    color: #555;
-    border-color: #555;
+    color: #e1b62f;
+    border-color: #e1b62f;
   }
   
   .speaker-link .arrow {
