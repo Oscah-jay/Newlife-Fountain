@@ -8,7 +8,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #193b0a;
     background-color: #fff;
 }
 
@@ -33,13 +33,13 @@ body {
 
 .sidebar-header {
     padding: 0 20px 20px;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #193b0a;
 }
 
 .sidebar-header h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #000;
+    color: #193b0a;
 }
 
 .sidebar-nav ul {
@@ -53,7 +53,7 @@ body {
 .sidebar-nav a {
     display: block;
     padding: 10px 20px;
-    color: #666;
+    color: #193b0a;
     text-decoration: none;
     transition: all 0.3s ease;
     border-right: 3px solid transparent;
@@ -61,7 +61,7 @@ body {
 
 .sidebar-nav a:hover, 
 .sidebar-nav a.active {
-    color: #000;
+    color: #e1b62f;
     background-color: rgba(0, 0, 0, 0.05);
     border-right-color: #8B4513;
 }
@@ -79,14 +79,14 @@ body {
 
 .hero h1 {
     font-size: 2.8rem;
-    color: #333;
+    color: #193b0a;
     margin-bottom: 15px;
     font-weight: 700;
 }
 
 .hero h2 {
     font-size: 1rem;
-    color: #666;
+    color: #000;
     font-weight: 400;
     max-width: 800px;
     margin-top: -10px ;
@@ -102,7 +102,7 @@ body {
 
 h2 {
     font-size: 1.8rem;
-    color: #333;
+    color: #193b0a;
     margin-bottom: 20px;
     font-weight: 600;
     margin-top: 120px;
@@ -139,7 +139,7 @@ h2 {
 
 .content-section h2 {
     font-size: 1.8rem;
-    color: #333;
+    color: #193b0a;
     margin-bottom: 20px;
     font-weight: 600;
 }
@@ -277,7 +277,7 @@ h2 {
 
 .mission-card h3 {
     font-size: 1.5rem;
-    color: #333;
+    color: #193b0a;
     margin-bottom: 15px;
     font-weight: 600;
 }
@@ -291,14 +291,14 @@ h2 {
 .learn-more {
     display: inline-flex;
     align-items: center;
-    color: #8B4513;
+    color: #193b0a;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 .learn-more:hover {
-    color: #5d2e0d;
+    color: #e1b62f;
 }
 
 .arrow {
@@ -448,7 +448,7 @@ h2 {
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #8bc34a;
+    color: #193b0a;
     font-weight: 600;
 }
 
@@ -470,8 +470,8 @@ h2 {
 .sermon-button {
     display: inline-block;
     background-color: transparent;
-    color: #ffffff;
-    border: 2px solid #ffffff;
+    color: #193b0a;
+    border: 2px solid #193b0a;
     padding: 12px 24px;
     border-radius: 30px;
     text-decoration: none;
@@ -484,7 +484,7 @@ h2 {
 
 .sermon-button:hover {
     background-color: #ffffff;
-    color: #121212;
+    color: #e1b62f;
 }
 
 .sermon-image-container {
@@ -609,14 +609,14 @@ h2 {
     display: inline-block;
     font-size: 0.9rem;
     font-weight: 600;
-    color: #8B4513;
+    color: #e1b62f;
     margin-bottom: 10px;
 }
 
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #333;
+    color: #193b0a;
     margin-bottom: 20px;
     line-height: 1.2;
 }
@@ -657,7 +657,7 @@ h2 {
 .ministry-title {
     font-size: 1.8rem;
     font-weight: 600;
-    color: #333;
+    color: #193b0a;
     margin-bottom: 15px;
 }
 
@@ -673,8 +673,8 @@ h2 {
     display: inline-block;
     padding: 10px 20px;
     background-color: transparent;
-    color: #8B4513;
-    border: 2px solid #8B4513;
+    color: #193b0a;
+    border: 2px solid #193b0a;
     border-radius: 30px;
     font-weight: 600;
     text-decoration: none;
@@ -682,7 +682,7 @@ h2 {
 }
 
 .learn-more-btn:hover {
-    background-color: #8B4513;
+    background-color: #e1b62f;
     color: #fff;
 }
 
@@ -747,8 +747,8 @@ h2 {
 .overlay-btn {
     display: inline-block;
     padding: 8px 16px;
-    background-color: #fff;
-    color: #333;
+    background-color: #193b0a;
+    color: #fff;
     border-radius: 4px;
     font-weight: 600;
     font-size: 0.9rem;
@@ -757,7 +757,7 @@ h2 {
 }
 
 .overlay-btn:hover {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #e1b62f;
     transform: translateY(-2px);
 }
 
@@ -856,14 +856,14 @@ h2 {
     display: inline-block;
     font-size: 1rem;
     font-weight: 600;
-    color: #8B4513;
+    color: #e1b62f;
     margin-bottom: 15px;
 }
 
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #333;
+    color: #193b0a;
     margin-bottom: 20px;
     line-height: 1.2;
 }
@@ -892,7 +892,7 @@ h2 {
 }
 
 .stats-icon {
-    color: #8B4513;
+    color: #e1b62f;
     margin-bottom: 15px;
     display: inline-block;
 }
@@ -900,7 +900,7 @@ h2 {
 .stats-number {
     font-size: 3rem;
     font-weight: 700;
-    color: #333;
+    color: #193b0a;
     margin-bottom: 10px;
 }
 
@@ -985,7 +985,7 @@ h2 {
     align-items: center;
     gap: 8px;
     padding: 12px 24px;
-    background-color: #8B4513;
+    background-color: #193b0a;
     color: #fff;
     border-radius: 30px;
     text-decoration: none;
@@ -996,7 +996,7 @@ h2 {
 }
 
 .serve-button:hover {
-    background-color: #6d3610;
+    background-color: #e1b62f;
     transform: translateY(-2px);
 }
 
