@@ -9,7 +9,7 @@
     justify-content: center;
     text-align: center;
     position: relative;
-    color: #5c5b5b;
+    color: #193b0a;
   }
   
   .events-hero-section .parallax-bg {
@@ -74,9 +74,9 @@
   }
   
   .view-btn.active {
-    background-color: #333;
+    background-color: #e1b62f;
     color: #fff;
-    border-color: #333;
+    border-color: #e1b62f;
   }
   
   .search-filter {
@@ -149,7 +149,7 @@
     position: absolute;
     top: 1rem;
     left: 1rem;
-    background-color: #333;
+    background-color: #193b0a;
     color: #fff;
     font-size: 0.8rem;
     font-weight: 600;
@@ -169,7 +169,7 @@
     font-size: 2.2rem;
     margin-bottom: 1rem;
     line-height: 1.3;
-    color: #222;
+    color: #193b0a;
   }
   
   .featured-event-description {
@@ -192,7 +192,7 @@
   }
   
   .detail-icon {
-    color: #333;
+    color: #193b0a;
     flex-shrink: 0;
   }
   
@@ -206,7 +206,7 @@
   
   .detail-content p {
     font-size: 1rem;
-    color: #333;
+    color: #193b0a;
     font-weight: 500;
   }
   
@@ -229,20 +229,20 @@
   }
   
   .primary-btn {
-    background-color: #333;
+    background-color: #193b0a;
     color: #fff;
   }
   
   .primary-btn:hover {
-    background-color: #222;
+    background-color: #193b0a;
     transform: translateY(-3px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
   .secondary-btn {
     background-color: transparent;
-    color: #333;
-    border: 1px solid #333;
+    color: #e1b62f;
+    border: 1px solid #e1b62f;
   }
   
   .secondary-btn:hover {
@@ -300,7 +300,7 @@
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 1;
-    color: #333;
+    color: #193b0a;
   }
   
   .event-month {
@@ -357,7 +357,7 @@
   .event-title {
     font-size: 1.3rem;
     margin-bottom: 0.8rem;
-    color: #222;
+    color: #193b0a;
   }
   
   .event-excerpt {
@@ -391,7 +391,7 @@
     display: block;
     text-align: center;
     padding: 0.7rem;
-    background-color: #333;
+    background-color: #193b0a;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
@@ -400,7 +400,7 @@
   }
   
   .event-details-btn:hover {
-    background-color: #222;
+    background-color: #e1b62f;
   }
   
   /* Calendar View */
@@ -418,7 +418,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
-    background-color: #333;
+    background-color: #193b0a;
     color: #fff;
   }
   
@@ -484,7 +484,7 @@
   }
   
   .date-cell.today {
-    background-color: #333;
+    background-color: #193b0a;
     color: #fff;
   }
   
@@ -495,7 +495,7 @@
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    background-color: #333;
+    background-color: #193b0a;
   }
   
   .date-cell.other-month {
@@ -510,7 +510,7 @@
   .events-date {
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    color: #333;
+    color: #193b0a;
   }
   
   .calendar-event-list {
@@ -536,7 +536,7 @@
   .event-time {
     font-size: 0.9rem;
     font-weight: 600;
-    color: #333;
+    color: #193b0a;
     min-width: 80px;
   }
   
@@ -547,7 +547,7 @@
   .event-content h5 {
     font-size: 1.1rem;
     margin: 0 0 0.3rem;
-    color: #222;
+    color: #193b0a;
   }
   
   .event-location {
@@ -556,7 +556,7 @@
   }
   
   .calendar-event-link {
-    color: #333;
+    color: #193b0a;
     text-decoration: none;
     font-weight: 600;
     font-size: 0.9rem;
@@ -567,9 +567,9 @@
   }
   
   .calendar-event-link:hover {
-    background-color: #333;
+    background-color: #193b0a;
     color: #fff;
-    border-color: #333;
+    border-color: #193b0a;
   }
   
   .load-more-container {
@@ -579,8 +579,8 @@
   .load-more-btn {
     padding: 0.8rem 2rem;
     background-color: transparent;
-    color: #333;
-    border: 1px solid #333;
+    color: #193b0a;
+    border: 1px solid #193b0a;
     border-radius: 4px;
     font-size: 1rem;
     font-weight: 600;
@@ -589,7 +589,7 @@
   }
   
   .load-more-btn:hover {
-    background-color: #333;
+    background-color: #193b0a;
     color: #fff;
   }
   
@@ -616,7 +616,7 @@
   .registration-title {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #222;
+    color: #193b0a;
   }
   
   .registration-description {
@@ -646,7 +646,7 @@
   .form-group label {
     margin-bottom: 0.5rem;
     font-weight: 500;
-    color: #333;
+    color: #193b0a;
   }
   
   .form-group input,
@@ -676,7 +676,7 @@
   
   .submit-btn {
     padding: 1rem;
-    background-color: #333;
+    background-color: #193b0a;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -687,7 +687,7 @@
   }
   
   .submit-btn:hover {
-    background-color: #222;
+    background-color: #e1b62f;
   }
   
   .registration-image {
@@ -699,7 +699,7 @@
   .footer {
     position: relative;
     background-color: white;
-    color: #333;
+    color: #193b0a;
     width: 100%;
 }
 
@@ -744,7 +744,7 @@
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: #000;
+    background-color: #193b0a;
     color: white;
     margin-right: 10px;
     text-decoration: none;
@@ -766,7 +766,7 @@
 }
 
 .footer-column h3 {
-    color: #333;
+    color: #193b0a;
     margin-bottom: 20px;
     font-size: 16px;
     font-weight: bold;
@@ -781,7 +781,7 @@
     left: 0;
     width: 50px;
     height: 2px;
-    background-color: #f7941d;
+    background-color: #e1b62f;
 }
 
 .footer-column ul {
@@ -793,13 +793,13 @@
 }
 
 .footer-column ul li a {
-    color: #333;
+    color: #193b0a;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .footer-column ul li a:hover {
-    color: #f7941d;
+    color: #e1b62f;
 }
 
 .contact-info h4 {
@@ -823,7 +823,7 @@
 
 .cta-button {
     display: inline-block;
-    background-color: #f7941d;
+    background-color: #e1b62f;
     color: white;
     padding: 12px 20px;
     text-decoration: none;
@@ -837,7 +837,7 @@
 }
 
 .cta-button:hover {
-    background-color: #e07e0c;
+    background-color: #e1b62f;
 }
 
 /* Back to top button */
@@ -866,7 +866,7 @@
 }
 
 .back-to-top i {
-    color: #333;
+    color: #193b0a;
 }
 
 .footer-bottom p{
