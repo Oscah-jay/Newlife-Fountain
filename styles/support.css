@@ -61,7 +61,7 @@ body {
 .nav-link {
     display: block;
     padding: 0.5rem 1rem;
-    color: #666;
+    color: #193b0a;
     text-decoration: none;
     transition: all 0.3s ease;
     border-radius: 4px;
@@ -69,7 +69,7 @@ body {
 }
 
 .nav-link:hover, .nav-link.active {
-    color: #333;
+    color: #e1b62f;
     background-color: #f5f5f5;
 }
 
@@ -106,7 +106,7 @@ body {
     font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 1.5rem;
-    color: #222;
+    color: #193b0a;
     line-height: 1.2;
     max-width: 800px;
 }
@@ -153,7 +153,7 @@ body {
     display: block;
     width: 80px;
     height: 4px;
-    background-color: #333;
+    background-color: #193b0a;
     margin: 1rem auto 0;
 }
 
@@ -185,7 +185,7 @@ body {
 
 .tab-btn.active {
     background-color: #f5f5f5;
-    border-bottom: 3px solid #333;
+    border-bottom: 3px solid #e1b62f;
 }
 
 .tab-content {
@@ -224,7 +224,7 @@ body {
     display: block;
     width: 100%;
     padding: 1rem;
-    background-color: #333;
+    background-color: #193b0a;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -235,7 +235,7 @@ body {
 }
 
 .give-btn:hover {
-    background-color: #222;
+    background-color: #e1b62f;
 }
 
 /* mobile Options */
@@ -248,8 +248,8 @@ body {
 .mobile-btn {
     flex: 1;
     padding: 0.75rem;
-    background-color: #f5f5f5;
-    border: 1px solid #ddd;
+    background-color: #193b0a;
+    border: 1px solid #193b0a;
     border-radius: 4px;
     font-size: 1rem;
     font-weight: 500;
@@ -258,7 +258,7 @@ body {
 }
 
 .mobile-btn:hover {
-    background-color: #eaeaea;
+    background-color: #e1b62f;
 }
 
 /* Text Giving Section */
@@ -292,7 +292,7 @@ body {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: #333;
+    background-color: #193b0a;
     color: #fff;
     border-radius: 50%;
     font-size: 1.5rem;
@@ -313,7 +313,7 @@ body {
 .text-disclaimer {
     margin-top: 2rem;
     font-size: 0.9rem;
-    color: #555;
+    color: #193b0a;
 }
 
 .text-note {
@@ -345,13 +345,13 @@ body {
 
 .text-message.received {
     background-color: #e5e5ea;
-    color: #000;
+    color: #193b0a;
     border-top-left-radius: 0;
     margin-right: auto;
 }
 
 .text-message.sent {
-    background-color: #34c759;
+    background-color: #e1b62f;
     color: #fff;
     border-top-right-radius: 0;
     margin-left: auto;
@@ -396,16 +396,16 @@ body {
 }
 
 .inline-link {
-    color: #333;
+    color: #193b0a;
     font-weight: 600;
     text-decoration: none;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #193b0a;
     transition: all 0.3s ease;
 }
 
 .inline-link:hover {
-    color: #555;
-    border-color: #555;
+    color: #e1b62f;
+    border-color: #e1b62f;
 }
 
 /* Impact Stats */
@@ -462,16 +462,16 @@ body {
 .resource-link {
     display: inline-block;
     margin-top: 1rem;
-    color: #333;
+    color: #193b0a;
     font-weight: 600;
     text-decoration: none;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #193b0a;
     transition: all 0.3s ease;
 }
 
 .resource-link:hover {
-    color: #555;
-    border-color: #555;
+    color: #e1b62f;
+    border-color: #e1b62f;
 }
 
 /* Accordion */
@@ -498,7 +498,7 @@ body {
 }
 
 .accordion-header:hover {
-    background-color: #f5f5f5;
+    background-color: #e1b62f;
 }
 
 .accordion-header h3 {
